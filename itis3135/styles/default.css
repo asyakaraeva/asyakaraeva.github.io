@@ -1,2 +1,25 @@
-<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    color: #333;
+}
 
+header,
+main,
+footer {
+    padding: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
