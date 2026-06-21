@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Baking Hobby</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -45,14 +50,30 @@
 
         section {
             display: none;
+            background-color: #fffefb;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,.1);
         }
 
         section.active {
             display: block;
         }
 
+        h2{
+            color: #d66b8f;
+        }
+
         figure {
             text-align: center;
+        }
+        
+        img{
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
         }
 
         img {
@@ -64,19 +85,58 @@
 
         figcaption {
             font-weight: bold;
+            margin-top: 9px;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td{
+            border: 1px solid #d66b8f;
+        }
+
+        th, td{
+            padding: 10px;
+            text-align: center;
         }
 
         footer {
-            background-color: #d97706;
-            color: white;
+            background-color: #cdefff;
+            color: #4a3b47;
             text-align: center;
             padding: 15px;
         }
 
-        footer a {
-            color: white;
-            margin: 0 10px;
+        footer img{
+            height: 31px;
+            width: auto;
+            margin: 5px;
         }
+
+        .footer-buttons {
+            margin-top: 15px;
+        }
+
+        .footer-buttons a {
+            display: inline-block;
+            padding: 10px 18px;
+            margin: 5px;
+            background-color: #ffd6e7;
+            color: #5a3d4a;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold; 
+            transition: 0.3s;
+        }
+
+        .footer-buttons a:hover {
+            background-color: #ffc2da;
+            transform: translateY(-2px);
+        }
+
+
 
     </style>
 </head>
@@ -110,13 +170,209 @@
             </ul>
             
             <figure>
-                <img src="images/baking-about.jpg" alt="Cookies">
+                <img src="images/baking-who.jpg" alt="Cookies">
                 <figcaption>Homemade cookies.</figcaption>
             </figure>
 
             <p><em>AI Prompt: Fresh chocolate chip cookies cooling on a baking rack.</em></p>
-    </section>
+        </section>
+
+
+
+        <section id="what" class="active">
+            <h2>What is Baking?</h2>
+
+            <p>Baking is one of my favorite hobbies because it allows me to be creative while making delicious treats.</p>
+
+            <p>I enjoy experimenting with recipes and learning new decorating techniques.</p>
+
+            <ul>
+                <li>Cakes</li>
+                <li>Cookies</li>
+                <li>Muffins</li>
+            </ul>
+
+            <figure>
+                <img src="images/baking-what.jpg" alt="Fresh baked cupcakes">
+                <figcaption>Freshly baked cupcakes.</figcaption>
+            </figure>
+
+            <p><em>AI Prompt: Photorealistic tray of homemade cupcakes with colorful frosting on a bright kitchen counter.</em></p>
 
         </section>
+
+
+
+        <section id="when">
+            <h2>When Do I Bake?</h2>
+
+            <p>I usually bake on weekends when I have extra time.</p>
+
+            <p>Holiday seasons are my favorite time for baking special treats.</p>
+
+            <table>
+                <tr>
+                    <th>Season</th>
+                    <th>Favorite Recipe</th>
+                </tr>
+
+                <tr>
+                    <td>Spring</td>
+                    <td>Lemon Cake</td>
+                </tr>
+
+                <tr>
+                    <td>Summer</td>
+                    <td>Berry Muffins</td>
+                </tr>
+
+                <tr>
+                    <td>Fall</td>
+                    <td>Pumpkin Bread</td>
+                </tr>
+
+                <tr>
+                    <td>Winter</td>
+                    <td>Holiday Cookies</td>
+                </tr>
+            </table>
+
+            <figure>
+                <img src="images/baking-when.jpg" alt="Holiday cookies">
+                <figcaption>Seasonal holiday baking.</figcaption>
+            </figure>
+
+            <p><em>AI Prompt: Assorted holiday cookies displayed on a festive table.</em></p>
+        </section>
+        
+        
+        <section id="where">
+            <h2>Where Do I Bake?</h2>
+
+            <p>Most of my baking takes place in my home kitchen.</p>
+
+            <p>I also enjoy baking for family gatherings and celebrations.</p>
+
+            <ul>
+                <li>Home Kitchen</li>
+                <li>Family Gatherings</li>
+                <li>Holiday Events</li>
+            </ul>
+
+            <figure>
+                <img src="images/baking-where.jpg" alt="Kitchen setup">
+                <figcaption>My favorite place to bake.</figcaption>
+            </figure>
+
+            <p><em>AI Prompt: Bright modern kitchen prepared for a baking session.</em></p>
+
+        </section>
+
+
+        <section id="how">
+            <h2>How Do I Bake?</h2>
+
+            <p>Baking requires patience, preparation, and attention to detail.</p>
+
+            <p>Following recipes carefully helps ensure good results.</p>
+
+            <ol>
+                <li>Gather ingredients</li>
+                <li>Preheat oven</li>
+                <li>Mix ingredients</li>
+                <li>Bake and cool</li>
+            </ol>
+
+            <figure>
+                <img src="images/baking-how.jpg" alt="Mixing batter">
+                <figcaption>Preparing cake batter.</figcaption>
+            </figure>
+
+            <p><em>AI Prompt: Baker mixing cake batter in a bright, modern kitchen.</em></p>
+
+        </section>
+
+
+        <section id="why">
+            <h2>Why I Love Baking</h2>
+
+            <p>Baking helps me relax and reduce stress.</p>
+
+            <p>It allows me to express creativity through recipes and decorations.</p>
+
+            <p>I enjoy sharing homemade treats with friends and family.</p>
+
+            <figure>
+                <img src="images/baking-why.jpg" alt="Decorated cake">
+                <figcaption>A decorated cake created as a baking project.</figcaption>
+            </figure>
+
+            <p><em>AI Prompt: Beautiful homemade celebration cake with elegant decorations.</em></p>
+
+
+        </section>
+
+
+        <section id="ai">
+            <h2>AI Prompts</h2>
+
+            <p>Photorealistic tray of homemade cupcakes with colorful frosting on a bright kitchen counter.</p>
+
+            <p>Fresh chocolate chip cookies cooling on a baking rack in a cozy kitchen.</p>
+
+            <p>Assorted holiday cookies displayed on a festive table.</p>
+
+            <p>Bright modern kitchen prepared for a baking session.</p>
+
+            <p>Baker mixing cake batter in a bright, modern kitchen.</p>
+
+            <p>Beautiful homemade celebration cake with elegant decorations.</p>
+        </section>
+
     </main>
+    
+    <footer>
+        <p>
+            Designed by
+            <a href="https://webpages.charlotte.edu/akaraeva/itis3135/karaevaenterprises.co/">Karaeva Enterprises ©2026</a>
+        </p>
+        
+        <p>Innovative Solutions, Exceptional Results</p>
+
+        <div class="footer-buttons">
+            <a href="https://validator.w3.org/check?uri=referer">
+            🧁 HTML Validator</a>
+
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            🍓 CSS Validator</a>
+
+            <a href="https://wave.webaim.org/">
+            🍰 Accessibility Check</a>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <script>
+    const navLinks = document.querySelectorAll("nav a");
+    const sections = document.querySelectorAll("main section");
+    
+    navLinks.forEach(link => {
+        link.addEventListener("click", function(event) {
+
+            event.preventDefault();
+            
+            const target = this.getAttribute("href").substring(1);
+            
+            sections.forEach(section => {
+                section.classList.remove("active");
+            });
+            document.getElementById(target).classList.add("active");
+        });
+    });
+    </script>
+
 </body>
