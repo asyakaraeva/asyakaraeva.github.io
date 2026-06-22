@@ -58,7 +58,7 @@
 
         section {
             display: none;
-            background: #fffefb;
+            background: #fff1e6;
             padding: 25px;
             border-radius: 20px;
             margin-bottom: 25px;
@@ -81,6 +81,7 @@
             box-shadow: 2px 2px 5px rgba(0,0,0,.08);
         }
 
+       
         figure {
             text-align: center;
         }
@@ -186,6 +187,50 @@
             transform: translateY(-2px);
         }
 
+        p {
+        font-family: "Georgia", serif;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: #4b2a3a;
+        letter-spacing: 0.2px;
+        }
+
+        
+        .text-box{
+            background: #fff1e6;
+            padding: 12px 20px;
+            border-radius: 12px;
+            border-left: 6px solid #ff6fae;
+            border-right: 6px solid #ff6fae;
+            margin: 12px 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li::before {
+            content: "- ";
+        }
+
+        ol li {
+            font-family: "Georgia", serif;
+            font-size: 1.08rem;
+            line-height: 1.7;
+            color: #4b2a3a;
+            letter-spacing: 0.2px;
+        }
+        
+        table {
+            font-family: "Georgia", serif;
+            border-collapse: separate;  
+            border-spacing: 0;           
+            background: #fff1e6;
+            border: 2px solid #ff6fae;   
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 2px 4px 10px rgba(0,0,0,0.08);
+        }
 
     </style>
 </head>
@@ -210,13 +255,18 @@
     <main>
         <section id="who">
             <h2>About me and my baking hobby</h2>
-            <p>Througout my entire life I've been surrounded by baking. My grandmother, aunts, and mom all love to bake</p>
-            <p>From constantly helping my family bake to now baking whenever I get the chance, it's always been a hobby of mine.</p>
-            <ul>
-                <li>Favorite dessert: Chocolate cake</li>
-                <li>Favorite cookie: Chocolate chip</li>
-                <li>Favorite bread: Banana bread</li>
-            </ul>
+            <div class="text-box">
+                <p>Througout my entire life I've been surrounded by baking. My grandmother, aunts, and mom all love to bake</p>
+                <p>From constantly helping my family bake to now baking whenever I get the chance, it's always been a hobby of mine.</p>
+            </div>
+
+            <div class="text-box">
+                <ul>
+                    <li>Favorite dessert: Chocolate cake</li>
+                    <li>Favorite cookie: Chocolate chip</li>
+                    <li>Favorite bread: Banana bread</li>
+                </ul>
+            </div>
             
             <figure>
                 <img src="images/baking-who.jpg" alt="cupcakes">
@@ -230,16 +280,21 @@
         <section id="what" class="active">
             <h2>What is Baking?</h2>
 
-            <p>Baking is one of my favorite hobbies because it allows me to be creative while making delicious treats.</p>
+            <div class="text-box">
+                <p>Baking is one of my favorite hobbies because it allows me to be creative while making delicious treats.</p>
 
-            <p>I enjoy experimenting with recipes and learning new decorating techniques.</p>
-            <p>The things I bake most often are:</p>
-            <ul>
-                <li>Cakes</li>
-                <li>Cookies</li>
-                <li>Muffins</li>
-                <li>Banana Bread</li>
-            </ul>
+                <p>I enjoy experimenting with recipes and learning new decorating techniques.</p>
+            
+            </div>
+            <div class="text-box">
+                <p>The things I bake most often are:</p>
+                <ul>
+                    <li>Cakes</li>
+                    <li>Cookies</li>
+                    <li>Muffins</li>
+                    <li>Banana Bread</li>
+                </ul>
+            </div>
 
             <figure>
                 <img src="images/baking-what.jpg" alt="Fresh baked cookies">
@@ -253,10 +308,11 @@
         <section id="when">
             <h2>When Do I Bake?</h2>
 
-            <p>I usually bake on weekends when I have extra time (or when i'm stressed and need something to take my mind off things).</p>
+             <div class="text-box">
+                <p>I usually bake on weekends when I have extra time (or when i'm stressed and need something to take my mind off things).</p>
 
-            <p>Holiday seasons are my favorite time for baking special treats. Especially testing new recipies for my family.</p>
-
+                <p>Holiday seasons are my favorite time for baking special treats. Especially testing new recipies for my family.</p>
+            </div>
 
             <figure>
                 <img src="images/baking-when.jpg" alt="Holiday cookies">
@@ -296,16 +352,20 @@
         <section id="where">
             <h2>Where Do I Bake?</h2>
 
-            <p>Most of my baking takes place in my home kitchen.</p>
+             <div class="text-box">
+                <p>Most of my baking takes place in my home kitchen.</p>
 
-            <p>I enjoy baking for family gatherings and celebrations!</p>
+                <p>I enjoy baking for family gatherings and celebrations!</p>
+            </div>
             
-            <p>I don't always bake in my home kitchen, sometimes I bake with family or friends.</p>
-            <ul>
-                <li>Home Kitchen</li>
-                <li>Family Gatherings</li>
-                <li>Holiday Events</li>
-            </ul>
+            <div class="text-box">
+                <p>I don't always bake in my home kitchen, sometimes I bake with family or friends.</p>
+                <ul>
+                    <li>Home Kitchen</li>
+                    <li>Family Gatherings</li>
+                    <li>Holiday Events</li>
+                </ul>
+            </div>
 
             <figure>
                 <img src="images/baking-where.jpg" alt="Kitchen setup">
@@ -317,18 +377,22 @@
 
         <section id="how">
             <h2>How Do I Bake?</h2>
+            
+            <div class="text-box">
+                <p>Baking requires patience, preparation, and attention to detail.</p>
 
-            <p>Baking requires patience, preparation, and attention to detail.</p>
-
-            <p>Following recipes carefully helps ensure good results.</p>
-
-            <p>The most basic outline for baking is:</p>
-            <ol>
-                <li>Gather ingredients</li>
-                <li>Preheat oven</li>
-                <li>Mix ingredients</li>
-                <li>Bake and cool</li>
-            </ol>
+                <p>Following recipes carefully helps ensure good results.</p>
+            </div>
+             
+            <div class="text-box">
+                <p>The most basic outline for baking is:</p>
+                <ol>
+                    <li>Gather ingredients</li>
+                    <li>Preheat oven</li>
+                    <li>Mix ingredients</li>
+                    <li>Bake and cool</li>
+                </ol>
+            </div>
 
             <figure>
                 <img src="images/baking-how.jpg" alt="mixing batter">
@@ -341,12 +405,13 @@
         <section id="why">
             <h2>Why I Love Baking</h2>
 
-            <p>Baking helps me relax and reduce stress. Though it does also cause me stress when recipies get difficult..</p>
+             <div class="text-box">
+                <p>Baking helps me relax and reduce stress. Though it does also cause me stress when recipies get difficult..</p>
 
-            <p>It allows me to express creativity through recipes and decorations.</p>
+                <p>It allows me to express creativity through recipes and decorations.</p>
 
-            <p>I enjoy sharing homemade treats with friends and family.</p>
-
+                <p>I enjoy sharing homemade treats with friends and family.</p>
+            </div>
             <figure>
                 <img src="images/baking-why.jpg" alt="Decorated cake">
                 <figcaption>The end results of baking is what makes it all worth it.</figcaption>
