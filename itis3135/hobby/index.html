@@ -17,14 +17,17 @@
         }
 
         header {
-            background-color: #e88db1;
+            background-color: #c45b85;
             text-align: center;
             padding: 20px;
         }
 
-        header h1 {
+        h1 {
             margin: 0;
-            color: white;
+            color: #fffaf5;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 0 rgba(255,255,255,0.3);
         }
 
         nav {
@@ -32,10 +35,15 @@
         }
 
         nav a {
-            color: white;
+            display: inline-block;
+            background-color: #fffaf5;
+            color: #4a2d38;
             text-decoration: none;
             font-weight: bold;
-            margin: 0 8px;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 30px;
+            transition: 0.3s;
         }
 
         nav a:hover {
@@ -50,19 +58,27 @@
 
         section {
             display: none;
-            background-color: #fffefb;
+            background: #fffefb;
             padding: 25px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,.1);
+            border-radius: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 15px rgba(0,0,0,.08);
+            border: 3px dashed #f3b4ca;
+            position: relative;
         }
 
-        section.active {
+        .active {
             display: block;
         }
 
         h2{
-            color: #d66b8f;
+            color: #a13d66;
+            background: linear-gradient(to right, #ffd6e7, #fff4e6);
+            padding: 10px 15px;
+            border-radius: 12px;
+            display: inline-block;
+            margin-top: 0;
+            box-shadow: 2px 2px 5px rgba(0,0,0,.08);
         }
 
         figure {
@@ -93,12 +109,29 @@
             width: 100%;
         }
 
+        caption {
+            color: #8a2f57;
+            font-weight: bold;
+        }
+
         table, th, td{
             border: 1px solid #d66b8f;
         }
 
         th, td{
             padding: 10px;
+            text-align: center;
+        }
+
+       figcaption {
+            font-family: "Georgia", serif;
+            font-size: 0.95rem;
+            color: #5a3e36;
+            text-align: center;
+            margin-top: 6px;
+        }
+
+        .ai-prompt {
             text-align: center;
         }
 
@@ -117,6 +150,7 @@
 
         .footer-buttons {
             margin-top: 15px;
+
         }
 
         .footer-buttons a {
@@ -136,6 +170,21 @@
             transform: translateY(-2px);
         }
 
+        .footer-link {
+            display: inline-block;
+            padding: 10px 18px;
+            margin: 5px;
+            background-color: #ffd6e7;
+            color: #5a3d4a;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold; 
+            transition: 0.3s;
+        }
+        .footer-link:hover {
+            background-color: #ffc2da;
+            transform: translateY(-2px);
+        }
 
 
     </style>
@@ -144,17 +193,17 @@
 <body>
     <header>
         <h1>
-            My Baking Hobby
+            🍓My Baking Hobby🍓
         </h1>
 
         <nav>
-            <a href="#who">Who</a>🧁
-            <a href="#what">What</a>🧁
-            <a href="#when">When</a>🧁
-            <a href="#where">Where</a>🧁
-            <a href="#how">How</a>🧁
-            <a href="#why">Why</a>🧁
-            <a href="#ai">AI Prompts</a>🧁
+            <a href="#who">Who🧁</a>
+            <a href="#what">What🧁</a>
+            <a href="#when">When🧁</a>
+            <a href="#where">Where🧁</a>
+            <a href="#how">How🧁</a>
+            <a href="#why">Why🧁</a>
+            <a href="#ai">AI Prompts🧁</a>
         </nav>
     </header>
 
@@ -170,12 +219,9 @@
             </ul>
             
             <figure>
-                <img src="images/baking-who.jpg" alt="Cookies">
-                <figcaption>Homemade cookies.</figcaption>
+                <img src="images/baking-who.jpg" alt="cupcakes">
+                <figcaption>Cute frosted cupcakes.</figcaption>
             </figure>
-
-            <p><em>Who could resist fresly baked chocolate chip cookies??</em></p>
-
             <p>Baking has become a way for me to connect with family traditions and bring in new recipies.</p>
         </section>
 
@@ -187,19 +233,18 @@
             <p>Baking is one of my favorite hobbies because it allows me to be creative while making delicious treats.</p>
 
             <p>I enjoy experimenting with recipes and learning new decorating techniques.</p>
-
+            <p>The things I bake most often are:</p>
             <ul>
                 <li>Cakes</li>
                 <li>Cookies</li>
                 <li>Muffins</li>
+                <li>Banana Bread</li>
             </ul>
 
             <figure>
-                <img src="images/baking-what.jpg" alt="Fresh baked cupcakes">
-                <figcaption>Freshly baked cupcakes.</figcaption>
+                <img src="images/baking-what.jpg" alt="Fresh baked cookies">
+                <figcaption>My "famous" biscoff chocolate chip cookies!</figcaption>
             </figure>
-
-            <p><em>AI Prompt: Photorealistic tray of homemade cupcakes with colorful frosting on a bright kitchen counter.</em></p>
 
         </section>
 
@@ -217,8 +262,8 @@
                 <img src="images/baking-when.jpg" alt="Holiday cookies">
                 <figcaption>Kunafa cream cups I made for Ramadan this year!</figcaption>
             </figure>
-            <p>I have my favorites throughout the year as well!</p>
             <table>
+                <caption>I have my favorites throughout the year as well!</caption>
                 <tr>
                     <th>Season</th>
                     <th>Favorite Recipe</th>
@@ -253,8 +298,9 @@
 
             <p>Most of my baking takes place in my home kitchen.</p>
 
-            <p>I also enjoy baking for family gatherings and celebrations.</p>
-
+            <p>I enjoy baking for family gatherings and celebrations!</p>
+            
+            <p>I don't always bake in my home kitchen, sometimes I bake with family or friends.</p>
             <ul>
                 <li>Home Kitchen</li>
                 <li>Family Gatherings</li>
@@ -263,10 +309,8 @@
 
             <figure>
                 <img src="images/baking-where.jpg" alt="Kitchen setup">
-                <figcaption>My favorite place to bake.</figcaption>
+                <figcaption>My favorite place to bake is my own kitchen.</figcaption>
             </figure>
-
-            <p><em>AI Prompt: Bright modern kitchen prepared for a baking session.</em></p>
 
         </section>
 
@@ -278,6 +322,7 @@
 
             <p>Following recipes carefully helps ensure good results.</p>
 
+            <p>The most basic outline for baking is:</p>
             <ol>
                 <li>Gather ingredients</li>
                 <li>Preheat oven</li>
@@ -286,11 +331,9 @@
             </ol>
 
             <figure>
-                <img src="images/baking-how.jpg" alt="Mixing batter">
-                <figcaption>Preparing cake batter.</figcaption>
+                <img src="images/baking-how.jpg" alt="mixing batter">
+                <figcaption>When the batter is looking like this, it's finally time to bake!</figcaption>
             </figure>
-
-            <p><em>AI Prompt: Baker mixing cake batter in a bright, modern kitchen.</em></p>
 
         </section>
 
@@ -298,7 +341,7 @@
         <section id="why">
             <h2>Why I Love Baking</h2>
 
-            <p>Baking helps me relax and reduce stress.</p>
+            <p>Baking helps me relax and reduce stress. Though it does also cause me stress when recipies get difficult..</p>
 
             <p>It allows me to express creativity through recipes and decorations.</p>
 
@@ -306,10 +349,9 @@
 
             <figure>
                 <img src="images/baking-why.jpg" alt="Decorated cake">
-                <figcaption>A decorated cake created as a baking project.</figcaption>
+                <figcaption>The end results of baking is what makes it all worth it.</figcaption>
             </figure>
 
-            <p><em>AI Prompt: Beautiful homemade celebration cake with elegant decorations.</em></p>
 
 
         </section>
@@ -319,23 +361,31 @@
             <h2>AI Prompts</h2>
 
             <figure>
-                <img src="images/baking-ai.jpg" alt="AI generated baking collage">
-                <figcaption>Collection of AI-generated baking images.</figcaption>
+                <img src="images/baking-who.jpg" alt="cupcakes">
+                <figcaption>Cute frosted cupcakes.</figcaption>
             </figure>
 
-            <p><em>AI Prompt: Baking collage showing cakes, cookies and cupcakes in a cozy kitchen.</em></p>
+            <p class="ai-prompt"><em>AI Prompt: Photorealistic tray of homemade cupcakes with colorful frosting on a bright kitchen counter.</em></p>
+            
+            <figure>
+                <img src="images/baking-where.jpg" alt="set up">
+                <figcaption>My favorite place to bake is my own kitchen.</figcaption>
+            </figure>
 
-            <p>Photorealistic tray of homemade cupcakes with colorful frosting on a bright kitchen counter.</p>
+            <p class="ai-prompt"><em>AI Prompt: Bright modern kitchen prepared for a baking session.</em></p>
 
-            <p>Fresh chocolate chip cookies cooling on a baking rack in a cozy kitchen.</p>
+            <figure>
+                <img src="images/baking-how.jpg" alt="mixing batter">
+                <figcaption>When the batter is looking like this, it's finally time to bake!</figcaption>
+            </figure>
+            <p class="ai-prompt"><em>AI Prompt: Baker mixing cake batter in a bright, modern kitchen.</em></p>
 
-            <p>Assorted holiday cookies displayed on a festive table.</p>
+            <figure>
+                <img src="images/baking-why.jpg" alt="cake">
+                <figcaption>The end results of baking is what makes it all worth it.</figcaption>
+            </figure>
+            <p class="ai-prompt"><em>AI Prompt: Beautiful homemade celebration cake with fruit decorations.</em></p>
 
-            <p>Bright modern kitchen prepared for a baking session.</p>
-
-            <p>Baker mixing cake batter in a bright, modern kitchen.</p>
-
-            <p>Beautiful homemade celebration cake with elegant decorations.</p>
         </section>
 
     </main>
@@ -343,11 +393,9 @@
     <footer>
         <p>
             Designed by
-            <a href="https://webpages.charlotte.edu/akaraeva/itis3135/karaevaenterprises.co/">Karaeva Enterprises ©2026</a>
+            <a class="footer-link" href="https://webpages.charlotte.edu/akaraeva/itis3135/karaevaenterprises.co/">Karaeva Enterprises</a> ©2026
         </p>
         
-        <p>Innovative Solutions, Exceptional Results</p>
-
         <div class="footer-buttons">
             <a href="https://validator.w3.org/check?uri=referer">
             🧁 HTML Validator</a>
@@ -355,7 +403,7 @@
             <a href="https://jigsaw.w3.org/css-validator/check/referer">
             🍓 CSS Validator</a>
 
-            <a href="https://wave.webaim.org/">
+            <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/akaraeva/itis3135/hobby/">
             🍰 Accessibility Check</a>
 
         </div>
@@ -369,20 +417,22 @@
     const navLinks = document.querySelectorAll("nav a");
     const sections = document.querySelectorAll("main section");
     
-    navLinks.forEach(link => {
+    navLinks.forEach((link) => {
         link.addEventListener("click", function(event) {
 
             event.preventDefault();
             
             const target = this.getAttribute("href").substring(1);
             
-            sections.forEach(section => {
+            sections.forEach((section) => {
                 section.classList.remove("active");
             });
             document.getElementById(target).classList.add("active");
         });
     });
     </script>
+
+<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
