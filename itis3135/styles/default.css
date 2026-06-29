@@ -99,3 +99,21 @@ footer a:hover {
     font-size: 1.1em;
     opacity: 0.9;
 }
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.image-row figure {
+    width: 220px;
+    text-align: center;
+}
+
+.image-row img {
+    max-width: 100%;
+    border-radius: 8px;
+}
