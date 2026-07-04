@@ -19,35 +19,37 @@
 <h2>Everything Images</h2>
 
 <p>
-This page demonstrates how digital images can be displayed and manipulated for the web.
-It compares different image formats, resizing methods, and proper versus improper image
-scaling. The first image is a high-resolution photograph from Pexels, while the second
-is a personal photograph taken specifically for this assignment.
+This page demonstrates how images can be manipulated for use on the web.
+It explores image formats, proper resizing techniques, CSS scaling,
+image compression, and the importance of maintaining correct proportions.
+Two different photographs are used: one downloaded from Pexels and one
+personal photograph taken specifically for this assignment.
 </p>
 
-<!-- ================================================= -->
+<!-- ====================================================== -->
 <!-- PEXELS IMAGE -->
-<!-- ================================================= -->
+<!-- ====================================================== -->
 
 <section>
 
 <h3>Demonstrating Image Manipulation with a Gourmet Cheese Board Photo from Pexels</h3>
 
 <p>
-I chose this image because it contains many detailed textures, colors, and lighting effects.
-The photograph was taken by Nati and downloaded from Pexels. The original image is a JPG
-with a high resolution, making it ideal for demonstrating image resizing, compression,
-and maintaining correct proportions on web pages.
+I selected this image because it contains many fine details, including fresh figs,
+blueberries, walnuts, soft cheese, and a glass of rosé wine. The photograph was
+taken by Nati and downloaded from Pexels. Their photography features elegant food
+styling and natural lighting. The original image is a JPG with a high resolution,
+making it an excellent example for demonstrating proper image editing and scaling.
 </p>
 
 <figure>
-    <img src="images/pexels-nati-87264186-12991627.jpg"
-         alt="A gourmet cheese board with fruit and wine."
-         width="600">
+<img src="images/pexels-nati-87264186-12991627.jpg"
+alt="Cheese board with figs and wine"
+width="600">
 
-    <figcaption>
-        Original high-resolution Pexels photograph.
-    </figcaption>
+<figcaption>
+Original high-resolution Pexels photograph.
+</figcaption>
 </figure>
 
 <article>
@@ -58,9 +60,12 @@ and maintaining correct proportions on web pages.
 Click to open each version:
 
 <a href="images/pexels-nati-87264186-12991627.jpg" target="_blank">Original JPG</a> |
-<a href="images/pexels-nati-87264186-12991627.gif" target="_blank">GIF</a> |
+
+<a href="images/pexels-nati-87264186-12991627.gif" target="_blank">GIF Version</a> |
+
 <a href="images/pexels-nati-87264186-12991627-grayscale.jpg" target="_blank">Grayscale</a> |
-<a href="images/pexels-nati-87264186-12991627-blackwhite.jpg" target="_blank">Black &amp; White</a>
+
+<a href="images/pexels-nati-87264186-12991627-blackwhite.jpg" target="_blank">Black & White</a>
 
 </p>
 
@@ -71,13 +76,13 @@ Click to open each version:
 <h4>Downsizing Images with CSS</h4>
 
 <p>
-The original image is displayed at a smaller size using only CSS while preserving
-its original proportions.
+This example uses the original image but displays it much smaller using CSS.
+The browser keeps the correct aspect ratio while reducing its display size.
 </p>
 
 <img src="images/pexels-nati-87264186-12991627.jpg"
-     alt="Cheese board resized with CSS"
-     style="width:220px;height:auto;">
+alt="Small cheese board"
+style="width:220px;height:auto;">
 
 </article>
 
@@ -86,13 +91,13 @@ its original proportions.
 <h4>Proper Reduction of Image with an Editor</h4>
 
 <p>
-This image was resized in an image editor before being displayed on the webpage.
-This reduces file size while maintaining excellent visual quality.
+This image was resized in an image editor before being added to the website.
+Doing so greatly reduces the file size while maintaining image quality.
 </p>
 
 <img src="images/pexels-nati-87264186-12991627-600x900.jpg"
-     alt="Properly resized image"
-     width="600">
+alt="Properly resized cheese board"
+width="600">
 
 </article>
 
@@ -105,11 +110,11 @@ This reduces file size while maintaining excellent visual quality.
 <figure>
 
 <img src="images/pexels-nati-87264186-12991627-600x900.jpg"
-     style="width:300px;height:200px;"
-     alt="Wide distortion">
+style="width:300px;height:200px;"
+alt="Wide distortion">
 
 <figcaption>
-Height reduced too much.
+Height reduced, stretching the image sideways.
 </figcaption>
 
 </figure>
@@ -117,11 +122,11 @@ Height reduced too much.
 <figure>
 
 <img src="images/pexels-nati-87264186-12991627-600x900.jpg"
-     style="width:300px;height:150px;"
-     alt="More distortion">
+style="width:300px;height:150px;"
+alt="More wide distortion">
 
 <figcaption>
-Height reduced even further.
+Further reducing the height increases distortion.
 </figcaption>
 
 </figure>
@@ -129,11 +134,11 @@ Height reduced even further.
 <figure>
 
 <img src="images/pexels-nati-87264186-12991627-600x900.jpg"
-     style="width:180px;height:450px;"
-     alt="Tall distortion">
+style="width:180px;height:450px;"
+alt="Tall distortion">
 
 <figcaption>
-Width reduced too much.
+Width reduced while height remains unchanged.
 </figcaption>
 
 </figure>
@@ -141,188 +146,8 @@ Width reduced too much.
 <figure>
 
 <img src="images/pexels-nati-87264186-12991627-600x900.jpg"
-     style="width:120px;height:450px;"
-     alt="Extreme distortion">
-
-<figcaption>
-Extreme width reduction.
-</figcaption>
-
-</figure>
-
-</div>
-
-</article>
-
-<article>
-
-<h4>Improper Enlarging with CSS</h4>
-
-<p>
-The image on the left was resized correctly. The image on the right was reduced
-to 25% of its original size and then enlarged with CSS, causing a noticeable
-loss of quality.
-</p>
-
-<div class="image-row">
-
-<figure>
-
-<img src="images/pexels-nati-87264186-12991627-600x900.jpg"
-     width="300"
-     alt="Good quality">
-
-<figcaption>
-Properly resized image.
-</figcaption>
-
-</figure>
-
-<figure>
-
-<img src="images/pexels-nati-87264186-12991627-150x225.jpg"
-     width="300"
-     alt="Poor quality">
-
-<figcaption>
-Reduced then enlarged.
-</figcaption>
-
-</figure>
-
-</div>
-
-</article>
-
-</section>
-
-<hr>
-
-<!-- ================================================= -->
-<!-- PERSONAL IMAGE -->
-<!-- ================================================= -->
-
-<section>
-
-<h3>Demonstrating Image Manipulation with a Personal Geometry Photograph</h3>
-
-<p>
-This photograph was taken specifically for this assignment. I chose a perfectly
-round paper plate placed beside my hand to demonstrate the importance of image
-proportions. Since the plate is perfectly round, it becomes easy to see when an
-image is stretched or squished. The original image is a high-resolution JPG
-taken with a smartphone.
-</p>
-
-<figure>
-
-    <img src="images/paper-plate-next-to-hand@asya-karaeva.jpg"
-         alt="A perfectly round paper plate beside my hand."
-         width="500">
-
-    <figcaption>
-        A perfectly round paper plate next to my hand.
-    </figcaption>
-
-</figure>
-
-<article>
-
-<h4>Original Image</h4>
-
-<p>
-Click to open each version:
-
-<a href="images/paper-plate-next-to-hand@asya-karaeva.jpg" target="_blank">Original JPG</a> |
-
-<a href="images/paper-plate-next-to-hand@asya-karaeva.gif" target="_blank">GIF</a> |
-
-<a href="images/paper-plate-next-to-hand@asya-karaeva-grayscale.jpg" target="_blank">Grayscale</a> |
-
-<a href="images/paper-plate-next-to-hand@asya-karaeva-blackwhite.jpg" target="_blank">Black &amp; White</a>
-
-</p>
-
-</article>
-
-<article>
-
-<h4>Downsizing Images with CSS</h4>
-
-<p>
-The original image is displayed at a much smaller size using CSS while
-keeping the correct aspect ratio.
-</p>
-
-<img src="images/paper-plate-next-to-hand@asya-karaeva.jpg"
-     alt="Paper plate resized with CSS"
-     style="width:220px;height:auto;">
-
-</article>
-
-<article>
-
-<h4>Proper Reduction of Image with an Editor</h4>
-
-<p>
-This version was resized in an image editor before being displayed on the
-webpage. Editing the image first reduces file size and improves loading speed
-while keeping the image sharp.
-</p>
-
-<img src="images/paper-plate-next-to-hand@asya-karaeva-600x1067.jpg"
-     alt="Properly resized paper plate"
-     width="600">
-
-</article>
-
-<article>
-
-<h4>Improper Image Proportions with CSS</h4>
-
-<div class="image-row">
-
-<figure>
-
-<img src="images/paper-plate-next-to-hand@asya-karaeva-600x1067.jpg"
-     style="width:300px;height:220px;"
-     alt="Image stretched wide">
-
-<figcaption>
-Height reduced, making the plate look like an oval.
-</figcaption>
-
-</figure>
-
-<figure>
-
-<img src="images/paper-plate-next-to-hand@asya-karaeva-600x1067.jpg"
-     style="width:300px;height:150px;"
-     alt="Image stretched wider">
-
-<figcaption>
-Even greater horizontal distortion.
-</figcaption>
-
-</figure>
-
-<figure>
-
-<img src="images/paper-plate-next-to-hand@asya-karaeva-600x1067.jpg"
-     style="width:180px;height:450px;"
-     alt="Image stretched tall">
-
-<figcaption>
-Width reduced while height stays the same.
-</figcaption>
-
-</figure>
-
-<figure>
-
-<img src="images/paper-plate-next-to-hand@asya-karaeva-600x1067.jpg"
-     style="width:120px;height:450px;"
-     alt="Image stretched very tall">
+style="width:120px;height:450px;"
+alt="More tall distortion">
 
 <figcaption>
 Extreme vertical distortion.
@@ -339,34 +164,33 @@ Extreme vertical distortion.
 <h4>Improper Enlarging with CSS</h4>
 
 <p>
-The left image was resized properly in an image editor. The right image was
-reduced to 25% of its size and then enlarged using CSS to the same display
-size. The enlarged image appears less detailed because of the loss of
-resolution.
+The left image was resized correctly using an image editor.
+The right image was reduced to 25% of its size and then enlarged
+using CSS. Notice the reduction in sharpness.
 </p>
 
 <div class="image-row">
 
 <figure>
 
-<img src="images/paper-plate-next-to-hand@asya-karaeva-600x1067.jpg"
-     width="300"
-     alt="Properly resized image">
+<img src="images/pexels-nati-87264186-12991627-600x900.jpg"
+width="300"
+alt="Good quality">
 
 <figcaption>
-Properly resized image.
+Properly resized.
 </figcaption>
 
 </figure>
 
 <figure>
 
-<img src="images/paper-plate-next-to-hand@asya-karaeva-150x267.jpg"
-     width="300"
-     alt="Low-resolution image enlarged">
+<img src="images/pexels-nati-87264186-12991627-150x225.jpg"
+width="300"
+alt="Poor quality">
 
 <figcaption>
-Reduced to 25% then enlarged with CSS.
+Reduced then enlarged with CSS.
 </figcaption>
 
 </figure>
@@ -377,23 +201,140 @@ Reduced to 25% then enlarged with CSS.
 
 </section>
 
-<hr>
-
 <section>
 
-<h3>Reflection</h3>
+<h3>Demonstrating Image Manipulation with a Personal Geometry Photograph</h3>
 
 <p>
-AI was used to help organize the HTML structure, generate descriptive text,
-and explain how different image manipulation techniques work. I used the AI as
-a guide while creating the page and editing my images.</p>
-
-<p>
-The biggest challenge was keeping all of the image filenames organized and
-creating multiple versions of each image. I learned the importance of
-maintaining image proportions, reducing file sizes properly, and choosing the
-correct image formats for web development.
+This photograph was taken specifically for this assignment. I chose a perfectly
+round paper plate placed beside my hand to demonstrate the importance of image
+proportions. The photograph was taken with a smartphone and saved as a JPG.
+Its high resolution makes it useful for demonstrating proper image resizing,
+compression, and distortion.
 </p>
+
+<figure>
+
+<img src="images/paper-plate-next-to-hand.jpg"
+alt="Paper plate beside my hand"
+width="500">
+
+<figcaption>
+A perfectly round paper plate next to my hand.
+</figcaption>
+
+</figure>
+
+<article>
+
+<h4>Original Image</h4>
+
+<p>
+
+<a href="images/paper-plate-next-to-hand.jpg" target="_blank">Original JPG</a> |
+
+<a href="images/paper-plate-next-to-hand.gif" target="_blank">GIF Version</a> |
+
+<a href="images/paper-plate-next-to-hand-grayscale.jpg" target="_blank">Grayscale</a> |
+
+<a href="images/paper-plate-next-to-hand-blackwhite.jpg" target="_blank">Black & White</a>
+
+</p>
+
+</article>
+
+<article>
+
+<h4>Downsizing Images with CSS</h4>
+
+<p>
+The original image is displayed much smaller using CSS while maintaining its
+correct aspect ratio.
+</p>
+
+<img src="images/paper-plate-next-to-hand.jpg"
+style="width:220px;height:auto;"
+alt="CSS resized paper plate">
+
+</article>
+
+<article>
+
+<h4>Proper Reduction of Image with an Editor</h4>
+
+<img src="images/paper-plate-next-to-hand-600x1067.jpg"
+width="600"
+alt="Properly resized paper plate">
+
+</article>
+
+<article>
+
+<h4>Improper Image Proportions with CSS</h4>
+
+<div class="image-row">
+
+<figure>
+<img src="images/paper-plate-next-to-hand-600x1067.jpg"
+style="width:300px;height:220px;"
+alt="">
+<figcaption>Height reduced.</figcaption>
+</figure>
+
+<figure>
+<img src="images/paper-plate-next-to-hand-600x1067.jpg"
+style="width:300px;height:150px;"
+alt="">
+<figcaption>Further height reduction.</figcaption>
+</figure>
+
+<figure>
+<img src="images/paper-plate-next-to-hand-600x1067.jpg"
+style="width:180px;height:450px;"
+alt="">
+<figcaption>Width reduced.</figcaption>
+</figure>
+
+<figure>
+<img src="images/paper-plate-next-to-hand-600x1067.jpg"
+style="width:120px;height:450px;"
+alt="">
+<figcaption>Extreme width reduction.</figcaption>
+</figure>
+
+</div>
+
+</article>
+
+<article>
+
+<h4>Improper Enlarging with CSS</h4>
+
+<div class="image-row">
+
+<figure>
+
+<img src="images/paper-plate-next-to-hand-600x1067.jpg"
+width="300"
+alt="Good">
+
+<figcaption>Properly resized image.</figcaption>
+
+</figure>
+
+<figure>
+
+<img src="images/paper-plate-next-to-hand-150x267.jpg"
+width="300"
+alt="Poor">
+
+<figcaption>Reduced then enlarged.</figcaption>
+
+</figure>
+
+</div>
+
+</article>
 
 </section>
 
@@ -403,3 +344,5 @@ correct image formats for web development.
 
 </body>
 </html>
+
+<hr>
