@@ -1,152 +1,194 @@
-body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to bottom, #7f5af0, #a78bfa);
-    color: #333;
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@300;400;500;600&display=swap');
+
+/* ==========================
+   GENERAL
+========================== */
+
+* {
     margin: 0;
-    padding: 40px 20px;
-    line-height: 1.8;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Main Containers */
+body {
+    font-family: 'Manrope', sans-serif;
+    background: linear-gradient(135deg, #bfd0b8 0%, #e8cfd2 50%, #d6e0c9 100%);
+    color: #5a5047;
+    padding: 30px;
+    line-height: 1.7;
+}
+
+/* ==========================
+   CARDS
+========================== */
+
 header,
 main,
 footer {
     max-width: 1000px;
-    margin: 0 auto 30px;
-    background: #fffaf0;
-    border: 3px solid #d8ccff;
-    border-radius: 22px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    margin: 25px auto;
+    background: #fffaf5;
+    border-radius: 28px;
+    padding: 35px;
+    border: 2px solid #ead8d8;
+    box-shadow: 0 12px 35px rgba(112, 129, 101, .15);
 }
 
-/* Header */
-header {
-    text-align: center;
-    padding: 35px;
+/* ==========================
+   HEADINGS
+========================== */
+
+h1,
+h2,
+h3 {
+    font-family: 'Cormorant Garamond', serif;
 }
 
 h1 {
-    font-size: 2em;
-    color: #6d4df5;
-    margin: 0;
-}
-
-.tagline {
-    color: #666;
-    font-size: 1.2em;
-    font-style: italic;
-    margin-top: 10px;
-}
-
-/* Navigation */
-nav {
-    margin-top: 20px;
+    color: #6b5664;
     text-align: center;
-    line-height: 2;
-}
-
-nav a {
-    color: #6d4df5;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color .3s ease;
-}
-
-nav a:hover {
-    color: #4f2fd4;
-    text-decoration: underline;
-}
-
-nav a:not(:last-child)::after {
-    content: " |";
-    color: #c4b5fd;
-    margin-left: 8px;
-}
-
-/* Main */
-main {
-    padding: 35px;
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
 }
 
 h2 {
     text-align: center;
-    color: #6d4df5;
-    font-size: 2.2em;
-    margin-top: 0;
-    margin-bottom: 15px;
+    color: #6b5664;
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+
+h2::before {
+    content: "✿";
+    display: block;
+    color: #d79aa4;
+    font-size: 22px;
+    margin-bottom: 8px;
 }
 
 h2::after {
     content: "";
     display: block;
-    width: 90px;
-    height: 3px;
-    background: #c4b5fd;
-    margin: 12px auto 0;
-    border-radius: 10px;
+    width: 120px;
+    height: 4px;
+    margin: 15px auto 0;
+    background: linear-gradient(to right, #d79aa4, #9db393);
+    border-radius: 30px;
 }
 
-/* Lists */
-ul {
-    list-style: none;
-    padding: 0;
+h3 {
+    color: #7d6d76;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
 }
 
-li {
-    background: #f9f6ff;
-    border-left: 5px solid #7f5af0;
-    padding: 12px 18px;
-    margin-bottom: 12px;
-    border-radius: 10px;
+/* ==========================
+   TEXT
+========================== */
+
+p {
+    max-width: 800px;
+    margin: 18px auto;
+    text-align: center;
+    color: #5b5249;
+    font-size: 1.05rem;
 }
 
-li::before {
-    content: "✨ ";
-}
+/* ==========================
+   NAVIGATION
+========================== */
 
-/* Address */
-address {
-    background: #f9f6ff;
-    border-left: 5px solid #7f5af0;
-    padding: 20px;
-    border-radius: 12px;
-    font-style: normal;
+nav {
     margin-top: 25px;
-}
-
-/* Footer */
-footer {
-    padding: 25px;
     text-align: center;
 }
 
-footer p {
-    margin: 12px 0;
+nav a {
+    display: inline-block;
+    margin: 6px;
+    padding: 9px 18px;
+    background: #f8e5e7;
+    color: #6b5664;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all .3s ease;
 }
 
+nav a:hover {
+    background: #9db393;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(157,179,147,.35);
+}
+
+/* ==========================
+   LINKS
+========================== */
+
+a {
+    color: #6b5664;
+}
+
+main a,
 footer a {
-    color: #6d4df5;
     text-decoration: none;
     font-weight: 600;
-    transition: color .3s ease;
+    transition: .3s;
 }
 
+main a:hover,
 footer a:hover {
-    color: #4f2fd4;
-    text-decoration: underline;
+    color: #8ca37f;
 }
 
-footer img {
-    margin: 8px;
+/* ==========================
+   LISTS
+========================== */
+
+ul {
+    list-style: none;
+    margin-top: 20px;
 }
 
-/* Images */
+li {
+    background: #fffdfb;
+    border-left: 6px solid #d79aa4;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.05);
+}
+
+li::before {
+    content: "🌸 ";
+}
+
+/* ==========================
+   ADDRESS
+========================== */
+
+address {
+    background: #fffdfb;
+    border-left: 6px solid #9db393;
+    border-radius: 18px;
+    padding: 20px;
+    margin-top: 25px;
+    font-style: normal;
+}
+
+/* ==========================
+   IMAGES
+========================== */
+
 .image-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
-    margin: 25px 0;
+    gap: 30px;
+    margin: 30px 0;
 }
 
 .image-row figure {
@@ -156,21 +198,169 @@ footer img {
 
 .image-row img {
     width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,.15);
-    transition: transform .3s ease;
+    border-radius: 20px;
+    border: 6px solid white;
+    box-shadow: 0 12px 25px rgba(216,156,165,.25);
+    transition: .3s;
 }
 
 .image-row img:hover {
     transform: scale(1.05);
 }
 
-/* Links in main content */
-main a {
-    color: #6d4df5;
+/* ==========================
+   FORMS
+========================== */
+
+label {
     font-weight: 600;
+    color: #6b5664;
 }
 
-main a:hover {
-    color: #4f2fd4;
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    border: 2px solid #d8d8d8;
+    border-radius: 12px;
+    font-family: inherit;
+    background: #fffdfb;
+    color: #5b5249;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #9db393;
+}
+
+/* Buttons */
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: #d79aa4;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: #8ca37f;
+    transform: translateY(-2px);
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    margin: 15px auto;
+}
+
+.footer-nav {
+    margin: 20px 0;
+    line-height: 2;
+}
+
+footer img {
+    margin: 10px;
+    transition: .3s;
+}
+
+footer img:hover {
+    transform: scale(1.05);
+}
+
+/* ==========================
+   TABLES
+========================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+th {
+    background: #d79aa4;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    background: #fffdfb;
+    padding: 12px;
+    border: 1px solid #ead8d8;
+}
+
+tr:nth-child(even) td {
+    background: #faf7f4;
+}
+
+/* ==========================
+   HORIZONTAL RULE
+========================== */
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #d79aa4, #9db393);
+    margin: 35px 0;
+}
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    header,
+    main,
+    footer {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px auto;
+        max-width: 250px;
+    }
+
+    .image-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-row figure {
+        width: 90%;
+    }
+
+    p {
+        text-align: left;
+    }
 }
