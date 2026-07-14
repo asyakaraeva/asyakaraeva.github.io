@@ -1,9 +1,6 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@300;400;500;600&display=swap');
 
-/* ==========================
-   GENERAL
-========================== */
 
 * {
     margin: 0;
@@ -24,9 +21,7 @@ body {
     line-height: 1.7;
 }
 
-/* ==========================
-   CARDS
-========================== */
+
 
 header,
 main,
@@ -40,9 +35,7 @@ footer {
     box-shadow: 0 12px 35px rgba(112, 129, 101, 0.15);
 }
 
-/* ==========================
-   HEADINGS
-========================== */
+
 
 h1 {
     font-family: 'Cormorant Garamond', serif;
@@ -86,9 +79,7 @@ h3 {
     font-size: 1.7rem;
 }
 
-/* ==========================
-   TEXT
-========================== */
+
 
 p {
     max-width: 800px;
@@ -98,9 +89,7 @@ p {
     font-size: 1.05rem;
 }
 
-/* ==========================
-   NAVIGATION
-========================== */
+
 
 nav {
     margin-top: 25px;
@@ -136,9 +125,7 @@ nav a:active {
     color: #ffffff;
 }
 
-/* ==========================
-   LINKS
-========================== */
+
 
 a {
     color: #8a3f62;
@@ -167,9 +154,7 @@ footer a:active {
     color: #425638;
 }
 
-/* ==========================
-   LISTS
-========================== */
+
 
 ul {
     list-style: none;
@@ -189,9 +174,7 @@ li::before {
     content: "🌸 ";
 }
 
-/* ==========================
-   ADDRESS
-========================== */
+
 
 address {
     background: #fffdfb;
@@ -202,9 +185,7 @@ address {
     font-style: normal;
 }
 
-/* ==========================
-   IMAGES
-========================== */
+
 
 img {
     max-width: 100%;
@@ -245,9 +226,7 @@ figcaption {
     font-style: italic;
 }
 
-/* ==========================
-   FORMS
-========================== */
+
 
 label {
     font-weight: 600;
@@ -276,9 +255,7 @@ select:focus {
     border-color: #809475;
 }
 
-/* ==========================
-   BUTTONS
-========================== */
+
 
 button,
 input[type="submit"],
@@ -302,9 +279,6 @@ input[type="reset"]:hover {
     transform: translateY(-2px);
 }
 
-/* ==========================
-   FOOTER
-========================== */
 
 footer {
     text-align: center;
@@ -328,9 +302,7 @@ footer img:hover {
     transform: scale(1.05);
 }
 
-/* ==========================
-   TABLES
-========================== */
+
 
 table {
     inline-size: 100%;
@@ -362,9 +334,7 @@ tr:nth-child(even) td {
     background: #faf7f4;
 }
 
-/* ==========================
-   HORIZONTAL RULE
-========================== */
+
 
 hr {
     border: none;
@@ -373,9 +343,7 @@ hr {
     margin: 35px 0;
 }
 
-/* ==========================
-   RESPONSIVE DESIGN
-========================== */
+
 
 @media (max-width: 768px) {
     body {
