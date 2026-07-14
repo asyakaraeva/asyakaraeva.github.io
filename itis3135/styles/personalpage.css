@@ -63,6 +63,13 @@ h2 {
     margin-bottom: 40px;
 }
 
+.cards-heading {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #168b8b;
+    margin-bottom: 5px;
+}
+
 .card {
     background: white;
     border-radius: 18px;
