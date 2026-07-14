@@ -5,53 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karaeva Enterprises | Web Design & Development</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
     <style>
         body {
+            margin: 0;
+            padding: 30px;
             font-family: Georgia, serif;
-            background-color: #e0e1dd;
-            color: #0d1b2a;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.7;
+            background-color: #f5f1e6;
+            color: #2f3e34;
+            line-height: 1.8;
         }
 
         header {
+            background-color: #0f6b4b;
+            color: #f5f1e6;
             text-align: center;
-            background-color: #1b263b;
-            color: #e0e1dd;
-            padding: 25px;
-            border-radius: 10px;
+            padding: 30px;
+            border-radius: 15px;
         }
 
         header img {
+            width: 80px;
+            height: 80px;
             vertical-align: middle;
-            margin-right: 12px;
         }
 
         h1 {
-            display: inline;
-            font-size: 2.5em;
+            display: inline-block;
+            margin-left: 15px;
+            font-size: 2.8em;
+            vertical-align: middle;
+        }
+
+        .tagline {
+            font-style: italic;
+            margin-top: 15px;
+            font-size: 1.1em;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fffdf8;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,.15);
         }
 
         h2 {
             text-align: center;
-            color: #1b263b;
-            border-bottom: 3px solid #778da9;
+            color: #0f6b4b;
+            border-bottom: 3px solid #b79f73;
             padding-bottom: 10px;
         }
 
-        main {
-            background-color: white;
-            padding: 25px;
-            margin-top: 20px;
-            border-radius: 10px;
+        h3 {
+            color: #0f6b4b;
         }
 
         ul {
-            list-style-type: "◆ ";
-            padding-left: 30px;
+            list-style-type: "✦ ";
+            padding-left: 35px;
         }
 
         li {
@@ -59,31 +75,29 @@
         }
 
         address {
-            background-color: #415a77;
+            background-color: #0f6b4b;
             color: white;
-            padding: 15px;
-            border-radius: 10px;
+            padding: 20px;
+            border-radius: 12px;
             font-style: normal;
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         footer {
             text-align: center;
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #1b263b;
-            color: #e0e1dd;
-            border-radius: 10px;
+            background-color: #0f6b4b;
+            color: #f5f1e6;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 30px;
         }
 
-        footer a {
-            color: #778da9;
-            text-decoration: none;
+        footer p {
+            margin: 8px;
         }
 
-        .tagline {
-            font-style: italic;
-            margin-top: 10px;
+        strong {
+            color: #f3d79b;
         }
     </style>
 
@@ -93,7 +107,15 @@
 <body>
 
 <header>
-    <div data-include="components/header.html"></div>
+
+    <img src="images/logo.png" alt="Karaeva Enterprises Logo">
+
+    <h1>Karaeva Enterprises</h1>
+
+    <p class="tagline">
+        Crafting elegant, accessible, and modern websites for businesses of every size.
+    </p>
+
 </header>
 
 <main>
@@ -101,45 +123,59 @@
     <h2>Home</h2>
 
     <p>
-        Karaeva Enterprises is a creative web design and development firm
-        dedicated to helping clients establish a strong online presence through
-        innovative design, responsive development, and user-focused solutions.
-        We combine creativity and technical expertise to create websites that
-        are visually appealing, accessible, and effective for businesses,
-        organizations, and individuals alike.
+        Karaeva Enterprises is a professional web design and development firm dedicated to creating
+        attractive, responsive, and user-friendly websites. We believe every business deserves an
+        online presence that reflects its unique identity while providing an enjoyable experience for
+        every visitor. By combining creativity with modern web technologies, we deliver websites that
+        are both beautiful and functional.
     </p>
 
-    <h3>What We Do Best</h3>
+    <h3>Why Clients Choose Karaeva Enterprises</h3>
 
     <ul>
-        <li>Custom website design tailored to client goals</li>
-        <li>Responsive layouts optimized for all devices</li>
-        <li>Accessibility-focused development practices</li>
-        <li>Fast-loading and performance-optimized websites</li>
-        <li>Creative branding and logo development</li>
-        <li>User experience and interface consulting</li>
-        <li>Search engine optimization integration</li>
-        <li>Reliable maintenance and support services</li>
+        <li>Custom website designs tailored to every client</li>
+        <li>Responsive layouts for desktop, tablet, and mobile devices</li>
+        <li>Accessibility-focused development following web standards</li>
+        <li>Creative branding and logo design assistance</li>
+        <li>Search engine optimization best practices</li>
+        <li>Performance optimization for fast-loading websites</li>
+        <li>Reliable website maintenance and updates</li>
+        <li>Friendly communication and personalized customer support</li>
     </ul>
 
     <p>
-        At Karaeva Enterprises, our mission is to transform ideas into engaging
-        digital experiences. Whether you need a personal portfolio, business
-        website, or complete online rebranding, we work closely with clients to
-        deliver solutions that are professional, functional, and memorable.
+        Whether you're launching a brand-new business, updating an existing website, or creating an
+        online portfolio, Karaeva Enterprises is committed to turning your vision into reality.
+        Every project is approached with attention to detail, creativity, and a passion for quality
+        web development that helps clients succeed online.
     </p>
 
     <address>
-        <strong>Contact Karaeva Enterprises</strong><br>
-        Email: info@karaevaenterprises.co<br>
-        Phone: (704) 555-3135<br>
-        Address: 100 Enterprise Way, Charlotte, NC 28223
+        <strong>Contact Karaeva Enterprises</strong><br><br>
+
+        📧 info@karaevaenterprises.co<br>
+        ☎ (704) 555-3135<br>
+        📍 100 Enterprise Way<br>
+        Charlotte, NC 28223
     </address>
 
 </main>
 
-<div data-include="components/footer.html"></div>
-<script src="scripts/include.min.js"></script>
+<footer>
+
+    <p>
+        <strong>Page created by Karaeva Enterprises ©2026</strong>
+    </p>
+
+    <p>
+        "Building websites that inspire confidence and create lasting impressions."
+    </p>
+
+    <p>
+        Certified in HTML &amp; CSS
+    </p>
+
+</footer>
 
 </body>
 </html>
