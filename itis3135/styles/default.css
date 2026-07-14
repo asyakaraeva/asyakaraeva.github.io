@@ -13,7 +13,12 @@
 
 body {
     font-family: 'Manrope', sans-serif;
-    background: linear-gradient(135deg, #bfd0b8 0%, #e8cfd2 50%, #d6e0c9 100%);
+    background: linear-gradient(
+        135deg,
+        #bfd0b8 0%,
+        #e8cfd2 50%,
+        #d6e0c9 100%
+    );
     color: #5a5047;
     padding: 30px;
     line-height: 1.7;
@@ -32,20 +37,15 @@ footer {
     border-radius: 28px;
     padding: 35px;
     border: 2px solid #ead8d8;
-    box-shadow: 0 12px 35px rgba(112, 129, 101, .15);
+    box-shadow: 0 12px 35px rgba(112, 129, 101, 0.15);
 }
 
 /* ==========================
    HEADINGS
 ========================== */
 
-h1,
-h2,
-h3 {
-    font-family: 'Cormorant Garamond', serif;
-}
-
 h1 {
+    font-family: 'Cormorant Garamond', serif;
     color: #6b5664;
     text-align: center;
     font-size: clamp(2.2rem, 4vw, 3.4rem);
@@ -54,9 +54,10 @@ h1 {
 }
 
 h2 {
+    font-family: 'Cormorant Garamond', serif;
     text-align: center;
     color: #6b5664;
-    font-size: 2.6rem;
+    font-size: clamp(2rem, 3vw, 2.6rem);
     margin-bottom: 20px;
 }
 
@@ -71,7 +72,7 @@ h2::before {
 h2::after {
     content: "";
     display: block;
-    width: 120px;
+    max-width: 120px;
     height: 4px;
     margin: 15px auto 0;
     background: linear-gradient(to right, #d79aa4, #9db393);
@@ -79,6 +80,7 @@ h2::after {
 }
 
 h3 {
+    font-family: 'Cormorant Garamond', serif;
     color: #7d6d76;
     margin-bottom: 10px;
     font-size: 1.7rem;
@@ -114,14 +116,18 @@ nav a {
     text-decoration: none;
     border-radius: 30px;
     font-weight: 600;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-    background: #9db393;
-    color: white;
+    background: #809475;
+    color: #ffffff;
     transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(157,179,147,.35);
+    box-shadow: 0 8px 15px rgba(128, 148, 117, 0.35);
+}
+
+nav a:visited {
+    color: #5f4d59;
 }
 
 /* ==========================
@@ -132,16 +138,20 @@ a {
     color: #6b5664;
 }
 
+a:visited {
+    color: #765f70;
+}
+
 main a,
 footer a {
     text-decoration: none;
     font-weight: 600;
-    transition: .3s;
+    transition: color 0.3s ease;
 }
 
 main a:hover,
 footer a:hover {
-    color: #8ca37f;
+    color: #6f845f;
 }
 
 /* ==========================
@@ -159,7 +169,7 @@ li {
     margin-bottom: 15px;
     padding: 15px 20px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 li::before {
@@ -183,6 +193,11 @@ address {
    IMAGES
 ========================== */
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .image-row {
     display: flex;
     flex-wrap: wrap;
@@ -192,20 +207,29 @@ address {
 }
 
 .image-row figure {
-    width: 220px;
+    flex: 0 1 220px;
     text-align: center;
 }
 
 .image-row img {
-    width: 100%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
     border-radius: 20px;
-    border: 6px solid white;
-    box-shadow: 0 12px 25px rgba(216,156,165,.25);
-    transition: .3s;
+    border: 6px solid #ffffff;
+    box-shadow: 0 12px 25px rgba(216, 156, 165, 0.25);
+    transition: transform 0.3s ease;
 }
 
 .image-row img:hover {
     transform: scale(1.05);
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #6b5664;
+    font-style: italic;
 }
 
 /* ==========================
@@ -220,7 +244,8 @@ label {
 input,
 textarea,
 select {
-    width: 100%;
+    display: block;
+    inline-size: 100%;
     padding: 12px;
     margin-top: 6px;
     margin-bottom: 18px;
@@ -235,28 +260,32 @@ input:focus,
 textarea:focus,
 select:focus {
     outline: none;
-    border-color: #9db393;
+    border-color: #809475;
 }
 
-/* Buttons */
+/* ==========================
+   BUTTONS
+========================== */
 
 button,
 input[type="submit"],
 input[type="reset"] {
-    background: #d79aa4;
-    color: white;
+    inline-size: auto;
+    display: inline-block;
+    background: #c47f8d;
+    color: #ffffff;
     border: none;
     border-radius: 30px;
     padding: 12px 24px;
     font-weight: 600;
     cursor: pointer;
-    transition: .3s;
+    transition: all 0.3s ease;
 }
 
 button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-    background: #8ca37f;
+    background: #758968;
     transform: translateY(-2px);
 }
 
@@ -279,7 +308,7 @@ footer p {
 
 footer img {
     margin: 10px;
-    transition: .3s;
+    transition: transform 0.3s ease;
 }
 
 footer img:hover {
@@ -291,14 +320,22 @@ footer img:hover {
 ========================== */
 
 table {
-    width: 100%;
+    inline-size: 100%;
     border-collapse: collapse;
     margin: 30px 0;
 }
 
+caption {
+    margin-bottom: 12px;
+    color: #6b5664;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 th {
-    background: #d79aa4;
-    color: white;
+    background: #c47f8d;
+    color: #ffffff;
     padding: 12px;
 }
 
@@ -323,10 +360,11 @@ hr {
     margin: 35px 0;
 }
 
-
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
 
 @media (max-width: 768px) {
-
     body {
         padding: 15px;
     }
@@ -335,14 +373,6 @@ hr {
     main,
     footer {
         padding: 25px;
-    }
-
-    h1 {
-        font-size: 2.3rem;
-    }
-
-    h2 {
-        font-size: 2rem;
     }
 
     nav a {
@@ -357,7 +387,8 @@ hr {
     }
 
     .image-row figure {
-        width: 90%;
+        flex-basis: auto;
+        max-width: 90%;
     }
 
     p {
