@@ -112,22 +112,28 @@ nav a {
     margin: 6px;
     padding: 9px 18px;
     background: #f8e5e7;
-    color: #6b5664;
+    color: #713653;
     text-decoration: none;
     border-radius: 30px;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
-nav a:hover {
-    background: #809475;
-    color: #ffffff;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(128, 148, 117, 0.35);
+nav a:visited {
+    background: #e2eadc;
+    color: #4f6545;
 }
 
-nav a:visited {
-    color: #5f4d59;
+nav a:hover {
+    background: #758968;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(117, 137, 104, 0.35);
+}
+
+nav a:active {
+    background: #b7657b;
+    color: #ffffff;
 }
 
 /* ==========================
@@ -135,23 +141,30 @@ nav a:visited {
 ========================== */
 
 a {
-    color: #6b5664;
+    color: #8a3f62;
+    font-weight: 600;
 }
 
 a:visited {
-    color: #765f70;
+    color: #596f4d;
 }
 
 main a,
 footer a {
-    text-decoration: none;
-    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
     transition: color 0.3s ease;
 }
 
 main a:hover,
 footer a:hover {
-    color: #6f845f;
+    color: #b24f79;
+}
+
+main a:active,
+footer a:active {
+    color: #425638;
 }
 
 /* ==========================
