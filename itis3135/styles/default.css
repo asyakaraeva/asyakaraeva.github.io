@@ -389,7 +389,7 @@ hr {
 .intro-image {
     display: block;
     width: 100%;
-    max-width: 250px;
+    max-width: 400px;
     height: auto;
     margin: 0 auto;
     border: 6px solid #d6c6a5;
@@ -450,36 +450,4 @@ blockquote {
 cite {
     color: #3f5148;
     font-weight: bold;
-}
-
-.profile-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 30px;
-}
-
-.profile-links a {
-    display: inline-block;
-    background-color: #047857;
-    color: #fffdf7;
-    padding: 9px 15px;
-    border: 2px solid #047857;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.profile-links a:visited {
-    background-color: #6b5d46;
-    border-color: #6b5d46;
-    color: #fffdf7;
-}
-
-.profile-links a:hover,
-.profile-links a:focus {
-    background-color: #f5eddb;
-    color: #064e3b;
-    border-color: #064e3b;
 }
