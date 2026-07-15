@@ -389,7 +389,7 @@ hr {
 .intro-image {
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 250px;
     height: auto;
     margin: 0 auto;
     border: 6px solid #d6c6a5;
