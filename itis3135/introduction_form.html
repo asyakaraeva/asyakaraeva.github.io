@@ -1,24 +1,633 @@
 <!DOCTYPE html>
-<html lanh="en">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction Form - Asya Karaeva</title>
-    <link rel="stylesheet" href="default.css">
+
+    <title>Asya Karaeva's Adorable Koala | ITIS3135 | Introduction Form</title>
+
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script
+        src="https://divonbriesen.github.io/web123/scripts/standards-check.js"
+        defer>
+    </script>
 </head>
 
 <body>
-    <header>
-        <div data-include="components/header.html"></div>
-    </header>
 
-    <main>
-        
+    <div data-include="components/header.html"></div>
+
+    <main id="main-content">
+        <h2>Introduction Form</h2>
+
+        <div id="form-container">
+            <h3>Please submit the form below.</h3>
+
+            <form id="introduction-form">
+                <fieldset>
+                    <legend>Name and Mascot</legend>
+
+                    <div class="form-row">
+                        <label for="first-name">
+                            First Name:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="first-name"
+                            name="firstName"
+                            value="Asya"
+                            placeholder="Enter your first name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <label for="middle-name">
+                            Middle Name or Initial:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="middle-name"
+                            name="middleName"
+                            placeholder="Optional"
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <label for="nickname">
+                            Nickname or Preferred Name:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nickname"
+                            name="nickname"
+                            placeholder="Optional"
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <label for="last-name">
+                            Last Name:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="last-name"
+                            name="lastName"
+                            value="Karaeva"
+                            placeholder="Enter your last name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <label for="mascot-adjective">
+                            Mascot Adjective:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="mascot-adjective"
+                            name="mascotAdjective"
+                            value="Adorable"
+                            placeholder="Example: Adorable"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <label for="mascot-animal">
+                            Mascot Animal:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="mascot-animal"
+                            name="mascotAnimal"
+                            value="Koala"
+                            placeholder="Example: Koala"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <label for="divider">
+                            Divider:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="divider"
+                            name="divider"
+                            value="|"
+                            placeholder="Example: |, ~, or ♥"
+                            required
+                        >
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Acknowledgment</legend>
+
+                    <div class="form-row">
+                        <label for="acknowledgment">
+                            Acknowledgment Statement:
+                        </label>
+
+                        <textarea
+                            id="acknowledgment"
+                            name="acknowledgment"
+                            placeholder="Enter your acknowledgment statement"
+                            required
+                        >I understand that what I post here is publicly viewable, and I will not post anything that I do not want the public to see.</textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="acknowledgment-initials">
+                            Initials:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="acknowledgment-initials"
+                            name="acknowledgmentInitials"
+                            value="AK"
+                            placeholder="Example: AK"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <label for="acknowledgment-date">
+                            Acknowledgment Date:
+                        </label>
+
+                        <input
+                            type="date"
+                            id="acknowledgment-date"
+                            name="acknowledgmentDate"
+                            value="2026-05-19"
+                            required
+                        >
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Picture</legend>
+
+                    <div class="form-row">
+                        <label for="picture">
+                            Upload a Different Picture:
+                        </label>
+
+                        <input
+                            type="file"
+                            id="picture"
+                            name="picture"
+                            accept="image/png, image/jpeg, image/webp"
+                        >
+
+                        <p class="field-note">
+                            Leave this blank to use the original Central Perk
+                            image.
+                        </p>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="picture-caption">
+                            Picture Caption:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="picture-caption"
+                            name="pictureCaption"
+                            value="Visiting the Central Perk café in New York City."
+                            placeholder="Describe your picture"
+                            required
+                        >
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Background Information</legend>
+
+                    <div class="form-row">
+                        <label for="personal-statement">
+                            Personal Statement:
+                        </label>
+
+                        <textarea
+                            id="personal-statement"
+                            name="personalStatement"
+                            placeholder="Introduce yourself"
+                            required
+                        >Hello! My name is Asya, and I am excited to meet everyone. I love spending time outdoors and trying new things. I am also a coffee enthusiast and enjoy visiting new cafés, like the one shown above.</textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="personal-background">
+                            Personal Background:
+                        </label>
+
+                        <textarea
+                            id="personal-background"
+                            name="personalBackground"
+                            placeholder="Describe your personal background"
+                            required
+                        >I am 20 years old. I was born in Chicago and moved to Charlotte when I was seven years old. I have lived here ever since. I speak three languages: English, Turkish, and Russian.</textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="professional-background">
+                            Professional Background:
+                        </label>
+
+                        <textarea
+                            id="professional-background"
+                            name="professionalBackground"
+                            placeholder="Describe your professional background"
+                            required
+                        >I currently assist with a family-owned logistics business. This experience has helped me learn more about communication, organization, and business operations.</textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="academic-background">
+                            Academic Background:
+                        </label>
+
+                        <textarea
+                            id="academic-background"
+                            name="academicBackground"
+                            placeholder="Describe your academic background"
+                            required
+                        >I am a junior computer science major at UNC Charlotte with a concentration in software engineering. I completed college courses through CPCC while I was in high school as part of a dual-enrollment program. Although this is my second year at UNC Charlotte, I am classified as a junior based on my credits.</textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="primary-computer">
+                            Primary Computer:
+                        </label>
+
+                        <textarea
+                            id="primary-computer"
+                            name="primaryComputer"
+                            placeholder="Describe your computer and work location"
+                            required
+                        >I use a 16-inch MacBook Pro running macOS. During the Fall and Spring semesters, I usually work on campus. At other times, I primarily work from my home office.</textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="funny-thing">
+                            Funny or Interesting Item:
+                        </label>
+
+                        <textarea
+                            id="funny-thing"
+                            name="funnyThing"
+                            placeholder="Optional"
+                        >My husband and I took a three-day trip to New York for our one-year anniversary. The only places I had saved for the trip were coffee shops, so he had to plan everything else.</textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="share-item">
+                            Something Else You Would Like to Share:
+                        </label>
+
+                        <textarea
+                            id="share-item"
+                            name="shareItem"
+                            placeholder="Optional"
+                        >I can play the piano!</textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Courses</legend>
+
+                    <p>
+                        Add each course you are taking and explain why you are
+                        taking it.
+                    </p>
+
+                    <div id="courses-container">
+                        <div class="course-entry">
+                            <h4>Course 1</h4>
+
+                            <div class="form-row">
+                                <label>
+                                    Department:
+                                    <input
+                                        type="text"
+                                        class="course-department"
+                                        value="ITIS"
+                                        placeholder="Example: ITIS"
+                                        required
+                                    >
+                                </label>
+                            </div>
+
+                            <div class="form-row">
+                                <label>
+                                    Course Number:
+                                    <input
+                                        type="text"
+                                        class="course-number"
+                                        value="3135"
+                                        placeholder="Example: 3135"
+                                        required
+                                    >
+                                </label>
+                            </div>
+
+                            <div class="form-row">
+                                <label>
+                                    Course Name:
+                                    <input
+                                        type="text"
+                                        class="course-name"
+                                        value="Front-End Web Application Development"
+                                        placeholder="Enter the course name"
+                                        required
+                                    >
+                                </label>
+                            </div>
+
+                            <div class="form-row">
+                                <label>
+                                    Reason:
+                                    <textarea
+                                        class="course-reason"
+                                        placeholder="Explain why you are taking this course"
+                                        required
+                                    >I was excited to begin designing and developing websites and to learn more about front-end development. This course is also required for my degree, and I wanted to balance it with my other courses.</textarea>
+                                </label>
+                            </div>
+
+                            <button
+                                type="button"
+                                class="delete-course-button"
+                            >
+                                Delete Course
+                            </button>
+                        </div>
+
+                        <div class="course-entry">
+                            <h4>Course 2</h4>
+
+                            <div class="form-row">
+                                <label>
+                                    Department:
+                                    <input
+                                        type="text"
+                                        class="course-department"
+                                        value="BUSN"
+                                        placeholder="Example: BUSN"
+                                        required
+                                    >
+                                </label>
+                            </div>
+
+                            <div class="form-row">
+                                <label>
+                                    Course Number:
+                                    <input
+                                        type="text"
+                                        class="course-number"
+                                        value="2000"
+                                        placeholder="Example: 2000"
+                                        required
+                                    >
+                                </label>
+                            </div>
+
+                            <div class="form-row">
+                                <label>
+                                    Course Name:
+                                    <input
+                                        type="text"
+                                        class="course-name"
+                                        value="Topics in Business and Economics"
+                                        placeholder="Enter the course name"
+                                        required
+                                    >
+                                </label>
+                            </div>
+
+                            <div class="form-row">
+                                <label>
+                                    Reason:
+                                    <textarea
+                                        class="course-reason"
+                                        placeholder="Explain why you are taking this course"
+                                        required
+                                    >I needed an additional elective outside of my major. I have also always been curious about business courses and have considered studying business in addition to computer science.</textarea>
+                                </label>
+                            </div>
+
+                            <button
+                                type="button"
+                                class="delete-course-button"
+                            >
+                                Delete Course
+                            </button>
+                        </div>
+                    </div>
+
+                    <button type="button" id="add-course-button">
+                        Add Course
+                    </button>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Quote</legend>
+
+                    <div class="form-row">
+                        <label for="quote">
+                            Quote:
+                        </label>
+
+                        <textarea
+                            id="quote"
+                            name="quote"
+                            placeholder="Enter a favorite quote"
+                            required
+                        >Do not go where the path may lead, go instead where there is no path and leave a trail.</textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="quote-author">
+                            Quote Author:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="quote-author"
+                            name="quoteAuthor"
+                            value="Ralph Waldo Emerson"
+                            placeholder="Enter the author's name"
+                            required
+                        >
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Links</legend>
+
+                    <div class="form-row">
+                        <label for="link-one-name">
+                            Link 1 Name:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="link-one-name"
+                            value="CLT Web"
+                            placeholder="Website name"
+                            required
+                        >
+
+                        <label for="link-one-url">
+                            Link 1 URL:
+                        </label>
+
+                        <input
+                            type="url"
+                            id="link-one-url"
+                            value="https://webpages.charlotte.edu/akaraeva/"
+                            placeholder="https://example.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <label for="link-two-name">
+                            Link 2 Name:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="link-two-name"
+                            value="GitHub"
+                            placeholder="Website name"
+                            required
+                        >
+
+                        <label for="link-two-url">
+                            Link 2 URL:
+                        </label>
+
+                        <input
+                            type="url"
+                            id="link-two-url"
+                            value="https://github.com/asyakaraeva"
+                            placeholder="https://example.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <label for="link-three-name">
+                            Link 3 Name:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="link-three-name"
+                            value="GitHub.io"
+                            placeholder="Website name"
+                            required
+                        >
+
+                        <label for="link-three-url">
+                            Link 3 URL:
+                        </label>
+
+                        <input
+                            type="url"
+                            id="link-three-url"
+                            value="https://asyakaraeva.github.io/"
+                            placeholder="https://example.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <label for="link-four-name">
+                            Link 4 Name:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="link-four-name"
+                            value="freeCodeCamp"
+                            placeholder="Website name"
+                            required
+                        >
+
+                        <label for="link-four-url">
+                            Link 4 URL:
+                        </label>
+
+                        <input
+                            type="url"
+                            id="link-four-url"
+                            value="https://www.freecodecamp.org/"
+                            placeholder="https://example.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <label for="link-five-name">
+                            Link 5 Name:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="link-five-name"
+                            value="Codecademy"
+                            placeholder="Website name"
+                            required
+                        >
+
+                        <label for="link-five-url">
+                            Link 5 URL:
+                        </label>
+
+                        <input
+                            type="url"
+                            id="link-five-url"
+                            value="https://www.codecademy.com/"
+                            placeholder="https://example.com"
+                            required
+                        >
+                    </div>
+                </fieldset>
+
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                    <button type="button" id="clear-button">Clear</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="result-container" hidden></div>
     </main>
+
+    <div data-include="components/footer.html"></div>
+
+    <script src="scripts/include.min.js"></script>
+    <script src="scripts/introduction.js"></script>
+
 </body>
-
-
-
 
 </html>
