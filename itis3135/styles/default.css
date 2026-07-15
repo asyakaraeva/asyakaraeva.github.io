@@ -451,3 +451,145 @@ cite {
     color: #3f5148;
     font-weight: bold;
 }
+/* Introduction Form */
+
+#introduction-form {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+fieldset {
+    background-color: #f8f1df;
+    border: 2px solid #0b6b50;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+legend {
+    background-color: #0b6b50;
+    color: #fffdf7;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-weight: bold;
+}
+
+.form-row {
+    margin-bottom: 18px;
+}
+
+.form-row label {
+    display: block;
+    color: #064e3b;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-row input,
+.form-row textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin-top: 7px;
+    padding: 10px;
+    border: 2px solid #a6926c;
+    border-radius: 7px;
+    background-color: #fffdf7;
+    color: #243c32;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-row textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+    border-color: #047857;
+    outline: 3px solid rgba(4, 120, 87, 0.2);
+}
+
+.field-note {
+    margin-top: 7px;
+    color: #4c5e55;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.course-entry {
+    background-color: #fffdf7;
+    border: 2px solid #d6c6a5;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 18px;
+}
+
+.course-entry h4 {
+    color: #065f46;
+    margin-top: 0;
+}
+
+.form-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.form-buttons button,
+#add-course-button,
+.delete-course-button {
+    background-color: #047857;
+    color: #fffdf7;
+    padding: 10px 18px;
+    border: 2px solid #047857;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-buttons button:hover,
+.form-buttons button:focus,
+#add-course-button:hover,
+#add-course-button:focus {
+    background-color: #f5eddb;
+    color: #064e3b;
+    border-color: #064e3b;
+}
+
+.delete-course-button {
+    background-color: #8c3f3f;
+    border-color: #8c3f3f;
+}
+
+.delete-course-button:hover,
+.delete-course-button:focus {
+    background-color: #fffdf7;
+    color: #702d2d;
+    border-color: #702d2d;
+}
+
+.result-buttons {
+    margin-top: 35px;
+}
+
+@media (max-width: 600px) {
+    fieldset {
+        padding: 14px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .form-buttons button,
+    #add-course-button,
+    .delete-course-button {
+        width: 100%;
+    }
+}
