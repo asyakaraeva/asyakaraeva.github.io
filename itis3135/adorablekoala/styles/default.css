@@ -139,7 +139,7 @@ figcaption {
 .card-grid {
     display: grid;
     gap: 1.25rem;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     margin: 2rem 0;
 }
 
@@ -379,5 +379,17 @@ footer a:focus {
 
     .hours-table {
         font-size: 0.92rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .card-grid {
+        grid-template-columns: 1fr;
     }
 }
