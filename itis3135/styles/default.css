@@ -94,11 +94,11 @@ h3 {
    PARAGRAPHS
 ======================================== */
 p {
-    max-width: 800px;
-    margin: 18px auto;
+    margin: 18px 0;
     text-align: left;
     color: #5b5249;
     font-size: 1.05rem;
+    line-height: 1.8;
 }
 
 /*
