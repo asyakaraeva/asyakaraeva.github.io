@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adorable Koala | Comfort Collection</title>
+
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <script src="scripts/include.min.js" defer></script>
+    <script src="scripts/adorablekoala.js" defer></script>
+
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- This container is required by the component-loading script. -->
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h2>Comfort Collection</h2>
+
+        <figure>
+            <img
+                src="images/comfort-products.jpg"
+                alt="A collection of pillows, eye masks, blankets, and gift boxes">
+
+            <figcaption>
+                A small collection created for relaxation, rest, and encouragement.
+            </figcaption>
+        </figure>
+
+        <p>
+            Our Comfort Collection includes practical products that help make
+            bedrooms, desks, and quiet spaces feel more peaceful. Every item
+            has been selected to match the soft and relaxing personality of
+            Adorable Koala.
+        </p>
+
+        <p>
+            Use the category buttons below to explore our sleep products,
+            relaxation items, desk comforts, and gift boxes. The filter changes
+            the products displayed without reloading the page.
+        </p>
+
+        <section aria-labelledby="filter-heading">
+            <h3 id="filter-heading">Browse by Category</h3>
+
+            <div class="filter-controls">
+                <button
+                    class="active-filter"
+                    type="button"
+                    data-filter="all"
+                    aria-pressed="true">
+                    All Products
+                </button>
+
+                <button
+                    type="button"
+                    data-filter="sleep"
+                    aria-pressed="false">
+                    Sleep
+                </button>
+
+                <button
+                    type="button"
+                    data-filter="relaxation"
+                    aria-pressed="false">
+                    Relaxation
+                </button>
+
+                <button
+                    type="button"
+                    data-filter="desk"
+                    aria-pressed="false">
+                    Desk Comfort
+                </button>
+
+                <button
+                    type="button"
+                    data-filter="gift"
+                    aria-pressed="false">
+                    Gift Boxes
+                </button>
+            </div>
+        </section>
+
+        <section class="card-grid" aria-label="Product collection">
+            <article class="product-card" data-category="sleep">
+                <h3>Koala Warming Pillow</h3>
+
+                <p>
+                    A soft microwave-safe pillow designed to provide gentle
+                    warmth during cold evenings.
+                </p>
+
+                <p><strong>Price:</strong> $18</p>
+            </article>
+
+            <article class="product-card" data-category="sleep">
+                <h3>Mini Comfort Blanket</h3>
+
+                <p>
+                    A lightweight blanket that is easy to use at home, in a
+                    dorm room, or while traveling.
+                </p>
+
+                <p><strong>Price:</strong> $22</p>
+            </article>
+
+            <article class="product-card" data-category="relaxation">
+                <h3>Lavender Eye Mask</h3>
+
+                <p>
+                    A soft eye mask with a calming lavender scent for naps,
+                    bedtime, or quiet breaks.
+                </p>
+
+                <p><strong>Price:</strong> $12</p>
+            </article>
+
+            <article class="product-card" data-category="relaxation">
+                <h3>Peaceful Evening Kit</h3>
+
+                <p>
+                    A calming set that includes herbal tea, a candle, an eye
+                    mask, and a relaxation card.
+                </p>
+
+                <p><strong>Price:</strong> $28</p>
+            </article>
+
+            <article class="product-card" data-category="desk">
+                <h3>Desk Companion Plush</h3>
+
+                <p>
+                    A small koala plush designed to bring a comforting touch to
+                    a study or work area.
+                </p>
+
+                <p><strong>Price:</strong> $14</p>
+            </article>
+
+            <article class="product-card" data-category="desk">
+                <h3>Calm Study Pouch</h3>
+
+                <p>
+                    A small pouch containing a stress ball, encouraging notes,
+                    tea, and a soft fabric bookmark.
+                </p>
+
+                <p><strong>Price:</strong> $16</p>
+            </article>
+
+            <article class="product-card" data-category="gift">
+                <h3>Thinking of You Box</h3>
+
+                <p>
+                    A comforting care package created for friends, family
+                    members, and anyone who needs encouragement.
+                </p>
+
+                <p><strong>Price:</strong> $35</p>
+            </article>
+
+            <article class="product-card" data-category="gift">
+                <h3>Birthday Comfort Box</h3>
+
+                <p>
+                    A birthday package featuring a plush, candle, snack, card,
+                    and personalized message.
+                </p>
+
+                <p><strong>Price:</strong> $40</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- This container is required by the component-loading script. -->
+    <div data-include="components/footer.html"></div>
+</body>
+
+</html>
