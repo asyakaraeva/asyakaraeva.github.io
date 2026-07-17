@@ -137,14 +137,16 @@ figcaption {
 }
 
 .card-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 2rem;
-    margin-right: 0;
-    margin-bottom: 2rem;
-    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
 }
-
+.card-grid .card,
+.card-grid .product-card {
+    flex-basis: 28%;
+    flex-grow: 1;
+}
 .info-panel,
 .package-summary {
     background-color: var(--light-cream);
