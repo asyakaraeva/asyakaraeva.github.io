@@ -1,6 +1,10 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@300;400;500;600&display=swap");
 
+
+/* ========================================
+   GENERAL RESET
+======================================== */
 
 * {
     margin: 0;
@@ -8,8 +12,13 @@
     box-sizing: border-box;
 }
 
+
+/* ========================================
+   GENERAL PAGE STYLES
+======================================== */
+
 body {
-    font-family: 'Manrope', sans-serif;
+    font-family: "Manrope", sans-serif;
     background: linear-gradient(
         135deg,
         #bfd0b8 0%,
@@ -21,24 +30,25 @@ body {
     line-height: 1.7;
 }
 
-
-
 header,
 main,
 footer {
     max-width: 1000px;
     margin: 25px auto;
     background: #fffaf5;
+    border: 2px solid #ead8d8;
     border-radius: 28px;
     padding: 35px;
-    border: 2px solid #ead8d8;
     box-shadow: 0 12px 35px rgba(112, 129, 101, 0.15);
 }
 
 
+/* ========================================
+   HEADINGS
+======================================== */
 
 h1 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: "Cormorant Garamond", serif;
     color: #6b5664;
     text-align: center;
     font-size: clamp(2.2rem, 4vw, 3.4rem);
@@ -47,7 +57,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: "Cormorant Garamond", serif;
     text-align: center;
     color: #6b5664;
     font-size: clamp(2rem, 3vw, 2.6rem);
@@ -73,23 +83,36 @@ h2::after {
 }
 
 h3 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: "Cormorant Garamond", serif;
     color: #7d6d76;
     margin-bottom: 10px;
     font-size: 1.7rem;
 }
 
 
+/* ========================================
+   PARAGRAPHS
+======================================== */
 
 p {
     max-width: 800px;
     margin: 18px auto;
-    text-align: center;
     color: #5b5249;
     font-size: 1.05rem;
 }
 
+/*
+   Paragraph containers remain centered,
+   but paragraph text inside main is left aligned.
+*/
+main p {
+    text-align: left;
+}
 
+
+/* ========================================
+   MAIN NAVIGATION
+======================================== */
 
 nav {
     margin-top: 25px;
@@ -113,7 +136,8 @@ nav a:visited {
     color: #4f6545;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
     background: #758968;
     color: #ffffff;
     transform: translateY(-3px);
@@ -126,6 +150,9 @@ nav a:active {
 }
 
 
+/* ========================================
+   GENERAL LINKS
+======================================== */
 
 a {
     color: #8a3f62;
@@ -145,7 +172,9 @@ footer a {
 }
 
 main a:hover,
-footer a:hover {
+main a:focus,
+footer a:hover,
+footer a:focus {
     color: #b24f79;
 }
 
@@ -155,6 +184,9 @@ footer a:active {
 }
 
 
+/* ========================================
+   LISTS
+======================================== */
 
 ul {
     list-style: none;
@@ -175,6 +207,9 @@ li::before {
 }
 
 
+/* ========================================
+   ADDRESS
+======================================== */
 
 address {
     background: #fffdfb;
@@ -186,6 +221,9 @@ address {
 }
 
 
+/* ========================================
+   IMAGES AND FIGURES
+======================================== */
 
 img {
     max-width: 100%;
@@ -210,8 +248,8 @@ img {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    border-radius: 20px;
     border: 6px solid #ffffff;
+    border-radius: 20px;
     box-shadow: 0 12px 25px rgba(216, 156, 165, 0.25);
     transition: transform 0.3s ease;
 }
@@ -220,13 +258,21 @@ img {
     transform: scale(1.05);
 }
 
+figure {
+    text-align: center;
+    margin: 25px auto;
+}
+
 figcaption {
     margin-top: 10px;
-    color: #6b5664;
+    color: #3f5148;
     font-style: italic;
 }
 
 
+/* ========================================
+   GENERAL FORMS
+======================================== */
 
 label {
     font-weight: 600;
@@ -251,11 +297,14 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-    outline: none;
+    outline: 3px solid rgba(128, 148, 117, 0.25);
     border-color: #809475;
 }
 
 
+/* ========================================
+   BUTTONS
+======================================== */
 
 button,
 input[type="submit"],
@@ -267,42 +316,83 @@ input[type="reset"] {
     border: none;
     border-radius: 30px;
     padding: 12px 24px;
+    font-family: inherit;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 button:hover,
+button:focus,
 input[type="submit"]:hover,
-input[type="reset"]:hover {
+input[type="submit"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus {
     background: #758968;
     transform: translateY(-2px);
 }
 
 
+/* ========================================
+   FOOTER
+======================================== */
+
 footer {
     text-align: center;
 }
 
-footer p {
-    margin: 15px auto;
-}
-
 .footer-nav {
-    margin: 20px 0;
+    margin: 15px 0 25px;
     line-height: 2;
 }
 
-footer img {
-    margin: 10px;
-    transition: transform 0.3s ease;
+.footer-nav a {
+    display: inline-block;
+    margin: 3px 5px;
 }
 
-footer img:hover {
-    transform: scale(1.05);
+.footer-nav span {
+    color: #758968;
+}
+
+.design-credit,
+.certification {
+    text-align: center;
+}
+
+.design-credit {
+    margin-top: 15px;
+}
+
+.design-credit a {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: #f8e5e7;
+    color: #713653;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.design-credit a:visited {
+    background-color: #e2eadc;
+    color: #4f6545;
+}
+
+.design-credit a:hover,
+.design-credit a:focus {
+    background-color: #758968;
+    color: #ffffff;
+}
+
+.certification {
+    margin-bottom: 0;
+    font-size: 0.95rem;
 }
 
 
+/* ========================================
+   TABLES
+======================================== */
 
 table {
     inline-size: 100%;
@@ -313,7 +403,7 @@ table {
 caption {
     margin-bottom: 12px;
     color: #6b5664;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -322,6 +412,7 @@ th {
     background: #c47f8d;
     color: #ffffff;
     padding: 12px;
+    border: 1px solid #ead8d8;
 }
 
 td {
@@ -335,6 +426,9 @@ tr:nth-child(even) td {
 }
 
 
+/* ========================================
+   HORIZONTAL RULE
+======================================== */
 
 hr {
     border: none;
@@ -344,40 +438,9 @@ hr {
 }
 
 
-
-@media (max-width: 768px) {
-    body {
-        padding: 15px;
-    }
-
-    header,
-    main,
-    footer {
-        padding: 25px;
-    }
-
-    nav a {
-        display: block;
-        margin: 8px auto;
-        max-width: 250px;
-    }
-
-    .image-row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .image-row figure {
-        flex-basis: auto;
-        max-width: 90%;
-    }
-
-    p {
-        text-align: left;
-    }
-}
-
-/* Introduction Page */
+/* ========================================
+   INTRODUCTION PAGE
+======================================== */
 
 .intro-name {
     text-align: center;
@@ -386,35 +449,18 @@ hr {
     margin-bottom: 20px;
 }
 
+/*
+   Removed width: 100% because Accumulus warned
+   about using width together with a border.
+   The general img max-width rule keeps it responsive.
+*/
 .intro-image {
     display: block;
-    width: 100%;
     max-width: 400px;
-    height: auto;
     margin: 0 auto;
     border: 6px solid #d6c6a5;
     border-radius: 16px;
     box-shadow: 0 6px 14px rgba(6, 95, 70, 0.2);
-}
-
-figure {
-    text-align: center;
-    margin: 25px auto;
-}
-
-figcaption {
-    margin-top: 10px;
-    color: #3f5148;
-    font-style: italic;
-}
-
-.acknowledgment {
-    background-color: #f5eddb;
-    border-left: 6px solid #047857;
-    padding: 15px;
-    margin: 25px 0;
-    border-radius: 8px;
-    font-style: italic;
 }
 
 .introduction-list > li {
@@ -435,6 +481,14 @@ figcaption {
     margin-top: 30px;
 }
 
+.no-bullet li {
+    border-left: none;
+}
+
+.no-bullet li::before {
+    content: "";
+}
+
 blockquote {
     background-color: #f5eddb;
     border: 2px solid #d6c6a5;
@@ -451,7 +505,21 @@ cite {
     color: #3f5148;
     font-weight: bold;
 }
-/* Introduction Form */
+
+
+/* ========================================
+   COURSE CONTRACT
+======================================== */
+
+.signature {
+    margin-top: 35px;
+    font-weight: 600;
+}
+
+
+/* ========================================
+   INTRODUCTION FORM
+======================================== */
 
 #introduction-form {
     max-width: 850px;
@@ -487,9 +555,8 @@ legend {
 
 .form-row input,
 .form-row textarea {
-    box-sizing: border-box;
     display: block;
-    width: 100%;
+    inline-size: 100%;
     margin-top: 7px;
     padding: 10px;
     border: 2px solid #a6926c;
@@ -526,7 +593,11 @@ legend {
     padding: 18px;
 }
 
-.course-entry h4 {
+/*
+   This replaces .course-entry h4.
+   It fixes the qualified heading warning.
+*/
+.course-title {
     color: #065f46;
     margin-top: 0;
 }
@@ -578,6 +649,43 @@ legend {
     margin-top: 35px;
 }
 
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    header,
+    main,
+    footer {
+        padding: 25px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px auto;
+        max-width: 250px;
+    }
+
+    .image-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-row figure {
+        flex-basis: auto;
+        max-width: 90%;
+    }
+
+    .footer-nav span {
+        display: none;
+    }
+}
+
 @media (max-width: 600px) {
     fieldset {
         padding: 14px;
@@ -590,6 +698,6 @@ legend {
     .form-buttons button,
     #add-course-button,
     .delete-course-button {
-        width: 100%;
+        inline-size: 100%;
     }
 }
