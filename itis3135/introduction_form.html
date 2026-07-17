@@ -8,7 +8,7 @@
     <title>Asya Karaeva's Adorable Koala | ITIS3135 | Introduction Form</title>
 
     <link rel="stylesheet" href="styles/default.css">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <script
@@ -32,9 +32,7 @@
                     <legend>Name and Mascot</legend>
 
                     <div class="form-row">
-                        <label for="first-name">
-                            First Name:
-                        </label>
+                        <label for="first-name">First Name:</label>
 
                         <input
                             type="text"
@@ -73,9 +71,7 @@
                     </div>
 
                     <div class="form-row">
-                        <label for="last-name">
-                            Last Name:
-                        </label>
+                        <label for="last-name">Last Name:</label>
 
                         <input
                             type="text"
@@ -118,9 +114,7 @@
                     </div>
 
                     <div class="form-row">
-                        <label for="divider">
-                            Divider:
-                        </label>
+                        <label for="divider">Divider:</label>
 
                         <input
                             type="text"
@@ -327,6 +321,7 @@
                                     <input
                                         type="text"
                                         class="course-department"
+                                        name="courseDepartment[]"
                                         value="ITIS"
                                         placeholder="Example: ITIS"
                                         required
@@ -340,6 +335,7 @@
                                     <input
                                         type="text"
                                         class="course-number"
+                                        name="courseNumber[]"
                                         value="3135"
                                         placeholder="Example: 3135"
                                         required
@@ -353,6 +349,7 @@
                                     <input
                                         type="text"
                                         class="course-name"
+                                        name="courseName[]"
                                         value="Front-End Web Application Development"
                                         placeholder="Enter the course name"
                                         required
@@ -365,6 +362,7 @@
                                     Reason:
                                     <textarea
                                         class="course-reason"
+                                        name="courseReason[]"
                                         placeholder="Explain why you are taking this course"
                                         required
                                     >I was excited to begin designing and developing websites and to learn more about front-end development. This course is also required for my degree, and I wanted to balance it with my other courses.</textarea>
@@ -388,6 +386,7 @@
                                     <input
                                         type="text"
                                         class="course-department"
+                                        name="courseDepartment[]"
                                         value="BUSN"
                                         placeholder="Example: BUSN"
                                         required
@@ -401,6 +400,7 @@
                                     <input
                                         type="text"
                                         class="course-number"
+                                        name="courseNumber[]"
                                         value="2000"
                                         placeholder="Example: 2000"
                                         required
@@ -414,6 +414,7 @@
                                     <input
                                         type="text"
                                         class="course-name"
+                                        name="courseName[]"
                                         value="Topics in Business and Economics"
                                         placeholder="Enter the course name"
                                         required
@@ -426,6 +427,7 @@
                                     Reason:
                                     <textarea
                                         class="course-reason"
+                                        name="courseReason[]"
                                         placeholder="Explain why you are taking this course"
                                         required
                                     >I needed an additional elective outside of my major. I have also always been curious about business courses and have considered studying business in addition to computer science.</textarea>
@@ -450,9 +452,7 @@
                     <legend>Quote</legend>
 
                     <div class="form-row">
-                        <label for="quote">
-                            Quote:
-                        </label>
+                        <label for="quote">Quote:</label>
 
                         <textarea
                             id="quote"
@@ -489,6 +489,7 @@
                         <input
                             type="text"
                             id="link-one-name"
+                            name="linkOneName"
                             value="CLT Web"
                             placeholder="Website name"
                             required
@@ -501,6 +502,7 @@
                         <input
                             type="url"
                             id="link-one-url"
+                            name="linkOneUrl"
                             value="https://webpages.charlotte.edu/akaraeva/"
                             placeholder="https://example.com"
                             required
@@ -515,6 +517,7 @@
                         <input
                             type="text"
                             id="link-two-name"
+                            name="linkTwoName"
                             value="GitHub"
                             placeholder="Website name"
                             required
@@ -527,6 +530,7 @@
                         <input
                             type="url"
                             id="link-two-url"
+                            name="linkTwoUrl"
                             value="https://github.com/asyakaraeva"
                             placeholder="https://example.com"
                             required
@@ -541,6 +545,7 @@
                         <input
                             type="text"
                             id="link-three-name"
+                            name="linkThreeName"
                             value="GitHub.io"
                             placeholder="Website name"
                             required
@@ -553,6 +558,7 @@
                         <input
                             type="url"
                             id="link-three-url"
+                            name="linkThreeUrl"
                             value="https://asyakaraeva.github.io/"
                             placeholder="https://example.com"
                             required
@@ -567,6 +573,7 @@
                         <input
                             type="text"
                             id="link-four-name"
+                            name="linkFourName"
                             value="freeCodeCamp"
                             placeholder="Website name"
                             required
@@ -579,6 +586,7 @@
                         <input
                             type="url"
                             id="link-four-url"
+                            name="linkFourUrl"
                             value="https://www.freecodecamp.org/"
                             placeholder="https://example.com"
                             required
@@ -593,6 +601,7 @@
                         <input
                             type="text"
                             id="link-five-name"
+                            name="linkFiveName"
                             value="Codecademy"
                             placeholder="Website name"
                             required
@@ -605,10 +614,34 @@
                         <input
                             type="url"
                             id="link-five-url"
+                            name="linkFiveUrl"
                             value="https://www.codecademy.com/"
                             placeholder="https://example.com"
                             required
                         >
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Generate Raw Code</legend>
+
+                    <p>
+                        Generate the current form information as HTML, JSON,
+                        or XML.
+                    </p>
+
+                    <div class="generator-buttons">
+                        <button type="button" id="generate-html-button">
+                            Generate HTML
+                        </button>
+
+                        <button type="button" id="generate-json-button">
+                            Generate JSON
+                        </button>
+
+                        <button type="button" id="generate-xml-button">
+                            Generate XML
+                        </button>
                     </div>
                 </fieldset>
 
@@ -621,6 +654,20 @@
         </div>
 
         <div id="result-container" hidden></div>
+
+        <section id="generated-code-section" hidden>
+            <h3 id="generated-code-heading">Generated Code</h3>
+
+            <label for="generated-code">
+                Raw code output:
+            </label>
+
+            <textarea
+                id="generated-code"
+                rows="20"
+                readonly
+            ></textarea>
+        </section>
     </main>
 
     <div data-include="components/footer.html"></div>
