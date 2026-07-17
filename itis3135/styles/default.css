@@ -93,10 +93,10 @@ h3 {
 /* ========================================
    PARAGRAPHS
 ======================================== */
-
 p {
     max-width: 800px;
     margin: 18px auto;
+    text-align: left;
     color: #5b5249;
     font-size: 1.05rem;
 }
