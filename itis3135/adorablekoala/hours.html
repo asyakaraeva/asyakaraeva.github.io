@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adorable Koala | Shop Hours</title>
+
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <script src="scripts/include.min.js" defer></script>
+    <script src="scripts/adorablekoala.js" defer></script>
+
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- This container is required by the component-loading script. -->
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h2>Shop Hours</h2>
+
+        <figure>
+            <img
+                src="images/shop-hours.jpg"
+                alt="A cozy store counter with a sign displaying business hours">
+
+            <figcaption>
+                Visit during store hours or browse our products online.
+            </figcaption>
+        </figure>
+
+        <p>
+            Adorable Koala is open throughout the week for customers who want
+            to browse our comfort products, create care packages, or pick up
+            online orders. Our quieter weekday mornings are ideal for customers
+            who prefer a peaceful shopping experience.
+        </p>
+
+        <p>
+            Online orders may be placed at any time. Orders submitted after
+            business hours are prepared on the next open day. Personalized gift
+            boxes may require one additional business day to complete.
+        </p>
+
+        <p id="shop-status" class="shop-status" aria-live="polite">
+            Checking the current shop status...
+        </p>
+
+        <table class="hours-table">
+            <caption>Weekly Store Hours</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Day</th>
+                    <th scope="col">Hours</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">Monday</th>
+                    <td>10:00 a.m. – 6:00 p.m.</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Tuesday</th>
+                    <td>10:00 a.m. – 6:00 p.m.</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Wednesday</th>
+                    <td>10:00 a.m. – 6:00 p.m.</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Thursday</th>
+                    <td>10:00 a.m. – 6:00 p.m.</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Friday</th>
+                    <td>10:00 a.m. – 6:00 p.m.</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Saturday</th>
+                    <td>10:00 a.m. – 4:00 p.m.</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Sunday</th>
+                    <td>Closed</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section class="info-panel">
+            <h3>Pickup Information</h3>
+
+            <p>
+                Customers receive an email when their order is ready. Pickup
+                orders are held for seven days at the front counter.
+            </p>
+        </section>
+    </main>
+
+    <!-- This container is required by the component-loading script. -->
+    <div data-include="components/footer.html"></div>
+</body>
+
+</html>
