@@ -36,8 +36,11 @@ function updateCourseHeadings() {
     const courseEntries = document.querySelectorAll(".course-entry");
 
     courseEntries.forEach((entry, index) => {
-        const heading = entry.querySelector("h4");
-        heading.textContent = `Course ${index + 1}`;
+        const heading = entry.querySelector(".course-title");
+
+        if (heading) {
+            heading.textContent = `Course ${index + 1}`;
+        }
     });
 }
 
@@ -46,7 +49,7 @@ function createCourseEntry() {
     courseEntry.classList.add("course-entry");
 
     courseEntry.innerHTML = `
-        <h4>Course</h4>
+        <h4 class="course-title">Course</h4>
 
         <div class="form-row">
             <label>
@@ -206,6 +209,21 @@ function getLinksHTML() {
             `;
         })
         .join("");
+}
+
+function resetProgress() {
+    form.reset();
+    uploadedImage = defaultImage;
+    pictureInput.value = "";
+
+    formContainer.hidden = false;
+    resultContainer.hidden = true;
+    resultContainer.innerHTML = "";
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
 
 function displayIntroduction() {
@@ -424,21 +442,6 @@ function handleSubmit(event) {
     displayIntroduction();
 }
 
-function resetProgress() {
-    form.reset();
-    uploadedImage = defaultImage;
-    pictureInput.value = "";
-
-    formContainer.hidden = false;
-    resultContainer.hidden = true;
-    resultContainer.innerHTML = "";
-
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-}
-
 function clearForm() {
     const textFields = form.querySelectorAll(
         "input:not([type='file']), textarea"
@@ -453,6 +456,7 @@ function clearForm() {
 }
 
 form.addEventListener("submit", handleSubmit);
+
 form.addEventListener("reset", function () {
     uploadedImage = defaultImage;
     pictureInput.value = "";
