@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adorable Koala | How It Works</title>
+
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <script src="scripts/include.min.js" defer></script>
+    <script src="scripts/adorablekoala.js" defer></script>
+
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- This container is required by the component-loading script. -->
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h2>How It Works</h2>
+
+        <figure>
+            <img
+                src="images/gift-packaging.jpg"
+                alt="A comfort gift box being wrapped with tissue paper and ribbon">
+
+            <figcaption>
+                Each package is selected, arranged, and wrapped with care.
+            </figcaption>
+        </figure>
+
+        <p>
+            Customers may choose a ready-made gift box or build a personalized
+            care package. After the items are selected, our team checks the
+            order, arranges the products, adds the gift message, and wraps the
+            box in recyclable packaging.
+        </p>
+
+        <p>
+            Use the interactive package builder below to create an example
+            care package. As you select products, the page will automatically
+            update the item count, selected product list, and estimated total.
+        </p>
+
+        <section aria-labelledby="builder-heading">
+            <h3 id="builder-heading">Build a Care Package</h3>
+
+            <fieldset>
+                <legend>Select Your Items</legend>
+
+                <label>
+                    <input
+                        class="care-option"
+                        type="checkbox"
+                        value="Koala Warming Pillow"
+                        data-price="18">
+                    Koala Warming Pillow — $18
+                </label>
+
+                <label>
+                    <input
+                        class="care-option"
+                        type="checkbox"
+                        value="Lavender Eye Mask"
+                        data-price="12">
+                    Lavender Eye Mask — $12
+                </label>
+
+                <label>
+                    <input
+                        class="care-option"
+                        type="checkbox"
+                        value="Mini Comfort Blanket"
+                        data-price="22">
+                    Mini Comfort Blanket — $22
+                </label>
+
+                <label>
+                    <input
+                        class="care-option"
+                        type="checkbox"
+                        value="Desk Companion Plush"
+                        data-price="14">
+                    Desk Companion Plush — $14
+                </label>
+
+                <label>
+                    <input
+                        class="care-option"
+                        type="checkbox"
+                        value="Herbal Tea Set"
+                        data-price="10">
+                    Herbal Tea Set — $10
+                </label>
+            </fieldset>
+
+            <label for="gift-message">
+                Gift message
+            </label>
+
+            <textarea
+                id="gift-message"
+                name="gift-message"
+                rows="4"
+                placeholder="Write a short message for the recipient."></textarea>
+
+            <section class="package-summary" aria-live="polite">
+                <h3>Your Package Summary</h3>
+
+                <p>
+                    <strong>Selected items:</strong>
+                    <span id="care-summary">No items selected yet.</span>
+                </p>
+
+                <p>
+                    <strong>Number of items:</strong>
+                    <span id="item-count">0</span>
+                </p>
+
+                <p>
+                    <strong>Estimated total:</strong>
+                    $<span id="care-total">0.00</span>
+                </p>
+
+                <p>
+                    <strong>Message preview:</strong>
+                    <span id="message-preview">
+                        Your personal gift message will appear here.
+                    </span>
+                </p>
+            </section>
+        </section>
+
+        <section class="card-grid">
+            <article class="card">
+                <h3>Step One</h3>
+
+                <p>
+                    Select a ready-made box or choose individual products.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Step Two</h3>
+
+                <p>
+                    Add a short message and provide the recipient information.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Step Three</h3>
+
+                <p>
+                    We package the order and prepare it for pickup or delivery.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <!-- This container is required by the component-loading script. -->
+    <div data-include="components/footer.html"></div>
+</body>
+
+</html>
