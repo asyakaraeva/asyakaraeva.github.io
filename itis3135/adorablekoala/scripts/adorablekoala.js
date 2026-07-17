@@ -1,10 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-    initializeSlideshow();
-    initializeProductFilter();
-    initializeCarePackageBuilder();
-    initializeHoursStatus();
-});
-
 /*
  * Homepage slideshow
  * Changes the featured image and caption when the user
@@ -194,8 +187,20 @@ function initializeHoursStatus() {
     if (shopIsOpen) {
         status.textContent = "The shop is currently open.";
         status.classList.add("open-status");
+        status.classList.remove("closed-status");
     } else {
         status.textContent = "The shop is currently closed.";
         status.classList.add("closed-status");
+        status.classList.remove("open-status");
     }
 }
+
+/*
+ * Runs the page features after the HTML has finished loading.
+ */
+document.addEventListener("DOMContentLoaded", () => {
+    initializeSlideshow();
+    initializeProductFilter();
+    initializeCarePackageBuilder();
+    initializeHoursStatus();
+});
