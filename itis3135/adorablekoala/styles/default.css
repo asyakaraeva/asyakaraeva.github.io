@@ -138,15 +138,21 @@ figcaption {
 
 .card-grid {
     display: grid;
-    gap: 1.25rem;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 2rem 0;
 }
 
-.card,
-.product-card,
+
 .info-panel,
 .package-summary {
+    background-color: var(--light-cream);
+    border: 2px solid var(--soft-beige);
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+}
+.card,
+.product-card {
+    margin: 0.65rem;
     background-color: var(--light-cream);
     border: 2px solid var(--soft-beige);
     border-radius: 1.25rem;
